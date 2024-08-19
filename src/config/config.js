@@ -338,6 +338,63 @@ const production = {
             },
             invite: 'https://discord.gg/QhTDQsyeD6',
         },
+
+        
+       const production = {
+    debugOut: () => { },
+    verboseOut: () => { },
+    clientId: '964615352489222225', // Theo
+    guilds: {
+        '928175231091236884': {
+            // Café de la Femme
+            verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
+            privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
+            channels: {
+                lobby: '1275115292644606005',               // CDLF:welcome-verify
+                verifyLogs: '1275115394021195816',           // CDLF:verify-logs
+                verifyLogsSecondary: '1275115440753872916', // CDLF:verify-kick-logs
+                welcome: '1275116015466057748',              // CDLF:welcome-wagon
+                general: '1225827399753797722',              // CDLF:rules
+                introduce: '949463502798614588',            // CDLF:introduce-yourself
+            },
+            roles: {
+                staffRoles: [
+                    // [Active]
+                    '928181806774243358',  // Barista (Admin)
+                    '963914918132846622', // Hostess (Mod)
+                    '949509841980903434', // Cashier (Trial Mod)
+                    '1273080176892313713',  // Bouncer [Verifier]
+                    '949479574373298287', // Staff
+                    '1273029518419824690', // Admin Key             
+                ],
+                verifier: '1273080176892313713',
+                verified: '949441336417853520', // La Femme [SERVER VERIFIED]
+                noImages: '1275118018526973982',
+                member: '1275122654088527915',
+                newbie: '1275124083335368807',
+                greeter: '978861945253945394',
+                inactivityPing: '1275124169016606792',
+                emojiVoid: '1275124294749392906',
+                catagories: {
+                    isTrans: '1105349250335907870',
+                    isQuestioning: '1105349324688338964',
+                    isCis: '1105349438953762837',
+                },
+            },
+            links: {
+                rules: 'https://canary.discord.com/channels/959551566388547676/1057132419150532678/1151892231091925163',
+                rule1: 'https://canary.discord.com/channels/959551566388547676/1151689401643053107/1151694186257600522',
+                rule2: 'https://canary.discord.com/channels/959551566388547676/1151689483977236610/1151694304037838910',
+                rule3: 'https://canary.discord.com/channels/959551566388547676/1151689644052840589/1151694373424218163',
+                rule5: 'https://canary.discord.com/channels/959551566388547676/1151689706912882758/1151694425110609941',
+                rule7: 'https://canary.discord.com/channels/959551566388547676/1151689903319564329/1151690023331172412',
+                rule9: 'https://canary.discord.com/channels/959551566388547676/1151689755537457265/1151694463127793674',
+                rule12: 'https://canary.discord.com/channels/959551566388547676/1151689825687195678/1151694529750106186',
+            },
+            invite: 'https://discord.gg/TransPlace',
+            },
+
+        
     },
 };
 
