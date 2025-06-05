@@ -236,7 +236,7 @@ const production = {
                 },
             },
             links: {
-                rules: 'https://canary.discord.com/channels/959551566388547676/1057132419150532678/1151892231091925163',
+                rules: 'https://canary.discord.com/channels/959551566388547676/1057132419150532678/1379598680251699330',
                 rule1: 'https://canary.discord.com/channels/959551566388547676/1151689401643053107/1151694186257600522',
                 rule2: 'https://canary.discord.com/channels/959551566388547676/1151689483977236610/1151694304037838910',
                 rule3: 'https://canary.discord.com/channels/959551566388547676/1151689644052840589/1151694373424218163',
@@ -355,6 +355,17 @@ const production = {
                 },
             links:  {
                 rules: 'https://canary.discord.com/channels/959551566388547676/1057132419150532678/1151892231091925163',
+                rule1: 'https://canary.discord.com/channels/638480381552754730/1378842074467794954/1378846359737602151',
+                rule2: 'https://canary.discord.com/channels/638480381552754730/1378844409222660126/1378845977842290858',
+                rule3: 'https://canary.discord.com/channels/638480381552754730/1378862066320015510/1378862385959272509',
+                rule5: 'https://canary.discord.com/channels/638480381552754730/1379266377700872343/1379266503727386699',
+                rule6: 'https://canary.discord.com/channels/638480381552754730/1379267116041244844/1379267267896021044',
+                rule7: 'https://canary.discord.com/channels/638480381552754730/1379268480083431484/1379269108142444556',
+                rule9: 'https://canary.discord.com/channels/638480381552754730/1379294404942102588/1379294558692573277',
+                rule12: 'https://canary.discord.com/channels/638480381552754730/1379295048063123486/1379295357514682508',
+            },
+            links: {
+                rules: 'https://canary.discord.com/channels/638480381552754730/1255543769835769999/1379578773745434725',
                 rule1: 'https://canary.discord.com/channels/638480381552754730/1378842074467794954/1378846359737602151',
                 rule2: 'https://canary.discord.com/channels/638480381552754730/1378844409222660126/1378845977842290858',
                 rule3: 'https://canary.discord.com/channels/638480381552754730/1378862066320015510/1378862385959272509',
