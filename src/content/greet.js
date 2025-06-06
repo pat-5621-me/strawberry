@@ -183,7 +183,7 @@ function buildGreetEmbeds(applicant) {
     return [
         new EmbedBuilder()
             .setColor(0xF5F5F5)
-            .setTitle(`Welcome to ${applicant.guild.name}, a place for trans people. ${pickEmoji()}`)
+            .setTitle(`Welcome to ${applicant.guild.name}, a place for systems. ${pickEmoji()}`)
             .setDescription(
                 `${bold(`Welcome ${userMention(applicant.id)}! We're glad to finally meet you!`)}\n${italic('Why don\'t you check out some of the channels below to get started?')}\n\n<id:customize> - Assign some Roles!\n${channelMention(config.guilds[applicant.guild.id].channels.introduce)} - Introduce Yourself!\n${channelMention(config.guilds[applicant.guild.id].channels.general)} - Start Chatting!`,
             )
