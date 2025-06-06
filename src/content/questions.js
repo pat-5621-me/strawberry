@@ -1,33 +1,33 @@
 const always = [
-    'What is your favorite rule from our server rules?',
+    'What is your favourite rule from our server rules?',
 ];
 
 const questionsObjects = [
     {
-        select: 'Transgender / Genderfluid / Non-Binary',
-        id: 'isTrans',
+        select: 'System',
+        id: 'isSystem',
         questions: [
-            'What do E and T mean in trans contexts?',
-            'What does the word Transgender mean to you?',
-            'How did you figure out your gender identity?',
+            'What is your opinion on endogenic vs. traumagenic systems?',
+            'What is the difference between OSDD and DID?',
+            'What made you realise you are a system?',
         ],
     },
     {
-        select: 'Transgender Questioning',
+        select: 'Questioning',
         id: 'isQuestioning',
         questions: [
-            'If you could change three things about yourself right now, what would they be?',
-            'What does the word Transgender mean to you?',
-            'What made you begin questioning your gender identity?',
+            'What are some disrespectful things to say to a system?',
+            'What does Plurality mean to you?',
+            'What made you begin to suspect you may be a system?',
         ],
     },
     {
-        select: 'Cisgender / Other LGBTQ+',
-        id: 'isCis',
+        select: 'Singlet [Non - System]',
+        id: 'isSinglet',
         questions: [
-            'What about this server being trans-focused made you want to join',
-            'What would you do as/being an ally in this server',
-            'What does the word Transgender mean to you?',
+            'Why are you interested in joining a system - focused server?',
+            'What is your experience with the OSDD / DID community?',
+            'What does the acronym DID stand for? Please also define it in your own words.',
         ],
     },
 ];
