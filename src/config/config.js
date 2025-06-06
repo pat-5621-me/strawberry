@@ -226,6 +226,7 @@ const production = {
                     isSinglet: '1369150890422042785',
                     isQuestioning: '1369150939868696576',
                     isSystem: '1369150708468940911',
+                emojiVoid: '1380347311133298739',
                 },
             },
             invite: 'https://discord.gg/WyxahUGjzy', // SysPlace permanent invite
