@@ -90,7 +90,7 @@ if guilds = 959551566388547676 or guilds = 1087014898199969873 or guilds = 63848
         .setDescription('We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional advice. Because of this, we do not have venting channels. We ask that you seek out appropriate help if you are experiencing a crisis and not depend on this server as an emotional crutch. Please avoid topics that are very heavy or emotionally loaded. Thank you for understanding ❤️')
         .setImage('https://i.imgur.com/CBbbw0d.png');
 
-else if guilds = 928175231091236884
+else if guilds = 928175231091236884 or guilds = 985931648094834798
      const rulesImgEmbed = new EmbedBuilder()
         .setColor(0xdf338c)
         .setImage('https://imgur.com/a/nRHL0wC');
