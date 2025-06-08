@@ -186,12 +186,8 @@ const production = {
     verboseOut: () => { },
     clientId: '964615352489222225', // Theo
     guilds: {
-        '959551566388547676': {
-            // TransPlace
-            sync: [
-                '1087014898199969873', // EnbyPlace
-                '638480381552754730', // Transonance
-            ],
+        '1369082683183075328': {
+            // SysPlace!
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
             channels: {
