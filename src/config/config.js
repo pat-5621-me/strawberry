@@ -209,6 +209,7 @@ const development = {
             invite: 'https://google.com',
             proxy: GAproxy,
             rulesMessages: TPRulesMessages({
+                disallowSelfies: true,
                 selfiesChannelId: '1258669733851562005',
             }),
         },
@@ -385,6 +386,7 @@ const production = {
             invite: 'https://discord.gg/xt8WqnGffb',
             proxy: TPproxy,
             rulesMessages: TPRulesMessages({
+                disallowSelfies: true,
                 selfiesChannelId: '1376455776993935481',
             }),
         },
