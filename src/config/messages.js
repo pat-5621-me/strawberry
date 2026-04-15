@@ -3,7 +3,7 @@ const TPRulesImgEmbed = {
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/tp-server-rules-header.png' },
 };
 
-const TPRulesEmbed = ({ selfiesChannelId }) => ({
+const TPRulesEmbed = ({ selfiesChannelId, disallowSelfies }) => ({
     color: 0xDF585B,
     title: 'Rules',
     fields: [
@@ -49,7 +49,7 @@ const TPRulesEmbed = ({ selfiesChannelId }) => ({
         },
         {
             name: '`11`. **Keep on-topic in all channels.**',
-            value: `> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.${selfiesChannelId ? `\n\n> *As well*, selfies are to be shared only in <#${selfiesChannelId}> (**#selfies**). This is to ensure the safety of all of our members. Access to the **#selfies** channel will be granted after meeting server activity requirements.` : ''}`,
+            value: `> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.${disallowSelfies ? '\n\n> *As well*, selfies are not allowed to be posted for now. A selfies channel will be opened in the future to allow posting selfies in a manner that is safer for everyone.' : ''}${!disallowSelfies && selfiesChannelId ? `\n\n> *As well*, selfies are to be shared only in <#${selfiesChannelId}> (**#selfies**). This is to ensure the safety of all of our members. Access to the **#selfies** channel will be granted after meeting server activity requirements.` : ''}`,
         },
         {
             name: '`12`. **Keep all conversations in English.**',
@@ -61,7 +61,7 @@ const TPRulesEmbed = ({ selfiesChannelId }) => ({
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-})
+});
 
 const notesReportEmbed = {
     color: 0xDF585B,
@@ -154,7 +154,7 @@ export const CDLFRulesImgEmbed = {
     color: 0xFF52F3,
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/cdlf-rules-header.png' },
 };
-    
+
 export const CDLFRulesEmbed = {
     color: 0xFF52F3,
     title: 'Rules',
