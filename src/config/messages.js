@@ -49,11 +49,11 @@ const TPRulesEmbed = {
         },
         {
             name: '`11`. **Keep on-topic in all channels.**',
-            value: '>  We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.\n\n> *As well*, selfies are to be shared only in <#+1037517248862101504> [**#selfies**]. This is to ensure the safety of all of our members. Access to the #selfies channel will be granted after meeting server activity requirements.',
+            value: '> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.\n\n> *As well*, selfies are to be shared only in <#+1037517248862101504> [**#selfies**]. This is to ensure the safety of all of our members. Access to the #selfies channel will be granted after meeting server activity requirements.',
         },
         {
             name: '`12`. **Keep all conversations in English.**',
-            value: '>  Short phrases or jokes in another language are allowed, but we cannot effectively moderate non-English extensive discussions. (Non-English threads are an exception. You can find a list of those [Here]({{rule12}}))',
+            value: '> Short phrases or jokes in another language are allowed, but we cannot effectively moderate non-English extensive discussions. (Non-English threads are an exception. You can find a list of those [Here]({{rule12}}))',
         },
         {
             name: '** **\n**By joining this server you agree to the following guidelines**',
