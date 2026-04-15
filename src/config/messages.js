@@ -24,7 +24,7 @@ const TPRulesEmbed = {
             value: '> This extends to conversations about sourcing HRT through illegitimate means. Additionally, please refrain from discussing or encouraging DIY binders, as they have the potential to harm the wearer if not properly handled.',
         },
         {
-            name: '5. **Treat everyone with respect.**',
+            name: '`5`. **Treat everyone with respect.**',
             value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated. [Read More]({{rule5}})',
         },
         {
