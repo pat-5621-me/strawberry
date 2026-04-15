@@ -208,7 +208,9 @@ const development = {
             },
             invite: 'https://google.com',
             proxy: GAproxy,
-            rulesMessages: GARulesMessages,
+            rulesMessages: TPRulesMessages({
+                selfiesChannelId: '1258669733851562005',
+            }),
         },
         '981615050664075404': {
             // TPSupporters
@@ -251,7 +253,9 @@ const development = {
             },
             invite: 'https://yahoo.com',
             proxy: TPproxy,
-            rulesMessages: TPRulesMessages,
+            rulesMessages: TPRulesMessages({
+                selfiesChannelId: '1494008807276281897',
+            }),
         },
     },
 };
@@ -320,7 +324,9 @@ const production = {
             },
             invite: 'https://discord.gg/TransPlace',
             proxy: TPproxy,
-            rulesMessages: TPRulesMessages,
+            rulesMessages: TPRulesMessages({
+                selfiesChannelId: '1037517248862101504',
+            }),
         },
         '1087014898199969873': {
             // EnbyPlace
@@ -378,7 +384,9 @@ const production = {
             },
             invite: 'https://discord.gg/xt8WqnGffb',
             proxy: TPproxy,
-            rulesMessages: TPRulesMessages,
+            rulesMessages: TPRulesMessages({
+                selfiesChannelId: '1376455776993935481',
+            }),
         },
         '638480381552754730': {
             // Transonance
@@ -437,7 +445,9 @@ const production = {
             },
             invite: 'https://discord.gg/QhTDQsyeD6',
             proxy: TPproxy,
-            rulesMessages: TPRulesMessages,
+            rulesMessages: TPRulesMessages({
+                selfiesChannelId: null,
+            }),
         },
         '1116634030834733077': {
             // TransDice!
@@ -475,7 +485,9 @@ const production = {
             },
             invite: 'https://discord.gg/YUJM2Qg55q',
             proxy: TPproxy,
-            rulesMessages: TPRulesMessages,
+            rulesMessages: TPRulesMessages({
+                selfiesChannelId: null,
+            }),
         },
         '1135300957572431902': {
             // Gender Anarchy

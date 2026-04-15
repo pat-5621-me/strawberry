@@ -3,7 +3,7 @@ const TPRulesImgEmbed = {
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/tp-server-rules-header.png' },
 };
 
-const TPRulesEmbed = {
+const TPRulesEmbed = ({ selfiesChannelId }) => ({
     color: 0xDF585B,
     title: 'Rules',
     fields: [
@@ -49,7 +49,7 @@ const TPRulesEmbed = {
         },
         {
             name: '`11`. **Keep on-topic in all channels.**',
-            value: '> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.\n\n> *As well*, selfies are to be shared only in <#+1037517248862101504> [**#selfies**]. This is to ensure the safety of all of our members. Access to the #selfies channel will be granted after meeting server activity requirements.',
+            value: `> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.${selfiesChannelId ? `\n\n> *As well*, selfies are to be shared only in <#${selfiesChannelId}> (**#selfies**). This is to ensure the safety of all of our members. Access to the **#selfies** channel will be granted after meeting server activity requirements.` : ''}`,
         },
         {
             name: '`12`. **Keep all conversations in English.**',
@@ -61,7 +61,7 @@ const TPRulesEmbed = {
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-};
+})
 
 const notesReportEmbed = {
     color: 0xDF585B,
@@ -141,8 +141,8 @@ const GAMentalHealthEmbed = {
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 };
 
-export const TPRulesMessages = [
-    { embeds: [TPRulesImgEmbed, TPRulesEmbed] },
+export const TPRulesMessages = (config) => [
+    { embeds: [TPRulesImgEmbed, TPRulesEmbed(config)] },
     { embeds: [notesReportEmbed, mentalHealthEmbed] },
 ];
 
