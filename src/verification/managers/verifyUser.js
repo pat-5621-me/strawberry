@@ -76,7 +76,7 @@ async function verifyUser(ticket, verifier, resolve, reject, type) {
     await Promise.all(sendMessages);
 
     // success
-    await resolve(`${userMention(applicant.id)} has been verified`);
+    await resolve(`${userMention(verifier.id)} verified ${userMention(applicant.id)}`);
 
     // close ticket (has to happen after resolution)
     await closeTicket(ticket);
