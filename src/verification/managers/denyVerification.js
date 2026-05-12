@@ -1,6 +1,6 @@
-import { bold, codeBlock } from 'discord.js';
+import { bold, codeBlock, userMention } from 'discord.js';
 import { verbose } from '../../config/out.js';
-import { parseApplicantId } from '../controllers/ticket.js';
+import { parseApplicantId, sendMessage } from '../controllers/ticket.js';
 import { fetchUser, resolveUser } from '../controllers/user.js';
 import VerificationError from '../verificationError.js';
 import ban from './ban.js';
@@ -139,6 +139,7 @@ async function denyVerification(
             closeType = CloseReason.unknown;
             break;
     }
+    await sendMessage(ticket, `${userMention(verifier.id)} has denied this verification`);
     await closeTicket(ticket, closeType);
 }
 
