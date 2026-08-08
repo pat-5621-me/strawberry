@@ -61,13 +61,14 @@ const TMPRulesEmbed = {
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-});
+};
 
 const TMPnotesReportEmbed = {
     color: 0xdf338c,
     title: 'Notes / Report to Staff',
     description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; open a ticket with staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. We want this space to be as inclusive and safe as possible. \n\n**To do this:**\n`Right-Click A Message > Apps > Daedalus > Flag Message`\n\n***This directly reports the message to our server staff for us to best handle the situation as fast as possible <3 ***\n\n> *This does not report the message to discord, just to our server staff.*',
     footer: { text: 'If you are ever unsure if something is allowed, feel free to ask.' },
+    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 };
 
 const TMPmentalHealthEmbed = {
@@ -78,11 +79,9 @@ const TMPmentalHealthEmbed = {
 };
 
 export const TMPRulesMessages = [
-    { embeds: [TMPRulesImgEmbed], [TMPRulesEmbed] },
+    { embeds: [TMPRulesImgEmbed, TMPRulesEmbed] },
     { embeds: [TMPnotesReportEmbed, TMPmentalHealthEmbed] },
 ];
-
-
 
 const TFPRulesImgEmbed = {
     color: 0x30d5c8,
@@ -111,7 +110,7 @@ const TFPRulesEmbed = {
         },
         {
             name: '`5`. **Treat everyone with respect.**',
-            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated. [Read More]({{rule5}})',
+            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated.',
         },
         {
             name: '`6`. **No discrimination**',
@@ -147,13 +146,14 @@ const TFPRulesEmbed = {
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-});
+};
 
 const TFPnotesReportEmbed = {
     color: 0x30d5c8,
     title: 'Notes / Report to Staff',
-    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. We want this space to be as inclusive and safe as possible.
+    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. We want this space to be as inclusive and safe as possible.',
     footer: { text: 'If you are ever unsure if something is allowed, feel free to ask.' },
+    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 };
 
 const TFPmentalHealthEmbed = {
@@ -164,11 +164,9 @@ const TFPmentalHealthEmbed = {
 };
 
 export const TFPRulesMessages = [
-    { embeds: [TFPRulesImgEmbed], [TFPRulesEmbed] },
+    { embeds: [TFPRulesImgEmbed, TFPRulesEmbed] },
     { embeds: [TFPnotesReportEmbed, TFPmentalHealthEmbed] },
 ];
-
-
 
 const SYSPRulesImgEmbed = {
     color: 0x8b0000,
@@ -197,11 +195,11 @@ const SYSPRulesEmbed = {
         },
         {
             name: '`5`. **Treat everyone with respect**',
-            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated. [Read More]({{rule5}})',
+            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated.',
         },
         {
             name: '`6`. **Pluralkit use**',
-            value: '> If you see users talking with the APP tag, they\'re talking through PluralKit. Due to Discord limitations, these messages will show up with the [APP] tag - however, they are not bots, they are users.\n\n Additionally, PluralKit is only to be used as a mental health aid, and not for any form of roleplay.',
+            value: '> If you see users talking with the APP tag, they\'re talking through PluralKit. Due to Discord limitations, these messages will show up with the [APP] tag - however, they are not bots, they are users.\n\n> Additionally, PluralKit is only to be used as a mental health aid, and not for any form of roleplay.',
         },
         {
             name: '`7`. **Respect triggers**',
@@ -217,7 +215,7 @@ const SYSPRulesEmbed = {
         },
         {
             name: '`10`. **No spam or self-promotion**',
-            value: '> Unless given explicit permission from a staff member avoiding self-promotion; including but not limited to: sending unsolicited server invites, advertisements, or direct messages with the intention of promoting content.\n\n Fonts and typing quirks that are unreadable are considered spam and are therefore not allowed.',
+            value: '> Unless given explicit permission from a staff member avoiding self-promotion; including but not limited to: sending unsolicited server invites, advertisements, or direct messages with the intention of promoting content.\n\n> Fonts and typing quirks that are unreadable are considered spam and are therefore not allowed.',
         },
         {
             name: '`11`. **Keep on topic in all channels**',
@@ -233,13 +231,14 @@ const SYSPRulesEmbed = {
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-});
+};
 
 const SYSPnotesReportEmbed = {
     color: 0x8b0000,
     title: 'Notes / Report to Staff',
-    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. You can report a user or message by: [right click -> applications -> Daedalus -> Flag Message]. This will result in the fastest response time. You will never be punished for a report made in good faith. We want this space to be as inclusive and safe as possible.
+    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. You can report a user or message by: [right click -> applications -> Daedalus -> Flag Message]. This will result in the fastest response time. You will never be punished for a report made in good faith. We want this space to be as inclusive and safe as possible.',
     footer: { text: 'If you are ever unsure if something is allowed, feel free to ask.' },
+    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 };
 
 const SYSPmentalHealthEmbed = {
@@ -250,12 +249,9 @@ const SYSPmentalHealthEmbed = {
 };
 
 export const SYSPRulesMessages = [
-    { embeds: [SYSPRulesImgEmbed], [SYSPRulesEmbed] },
+    { embeds: [SYSPRulesImgEmbed, SYSPRulesEmbed] },
     { embeds: [SYSPnotesReportEmbed, SYSPmentalHealthEmbed] },
 ];
-
-
-
 
 const MADRulesImgEmbed = {
     color: 0xC765AB,
@@ -312,7 +308,7 @@ const MADRulesEmbed = {
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-});
+};
 
 const MADmentalHealthEmbed = {
     color: 0x30d5c8,
@@ -322,7 +318,6 @@ const MADmentalHealthEmbed = {
 };
 
 export const MADRulesMessages = [
-    { embeds: [MADRulesImgEmbed], [MADRulesEmbed] },
+    { embeds: [MADRulesImgEmbed, MADRulesEmbed] },
     { embeds: [MADmentalHealthEmbed] },
 ];
-    

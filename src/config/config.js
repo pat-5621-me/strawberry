@@ -1,7 +1,12 @@
 import { ChannelType, ThreadAutoArchiveDuration } from 'discord.js';
 import 'dotenv/config';
 import { FatalError } from '../bot/utils/errors.js';
-import { TMPRulesMessages, MADRulesMessages, TFPRulesMessages, SYSPRulesMessages } from './messages.js';
+import {
+    TMPRulesMessages,
+    MADRulesMessages,
+    TFPRulesMessages,
+    SYSPRulesMessages,
+} from './messages.js';
 
 // for easier reading
 /* eslint-disable max-len */
@@ -45,7 +50,7 @@ const config = {
     guilds: {},
 };
 
-const TMPproxy = {
+const TMPProxy = {
     name: 'Verification [Basil] Proxy',
     displayName: '[Basil] ♡ [Any Pronouns]',
     avatarURL: 'https://imgtree.co/direct/xg9P-9XP.png',
@@ -55,7 +60,7 @@ const TMPproxy = {
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
-const: MADProxy = {
+const MADProxy = {
     name: 'Verification [Ruby] Proxy',
     displayName: '[Ruby] ♡ [She / Her / Hers]',
     avatarURL: 'https://imgtree.co/direct/aJg_YDWN.jpg',
@@ -65,7 +70,7 @@ const: MADProxy = {
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
-const: SYSPProxy = {
+const SYSPProxy = {
     name: 'Verification [Cypher] Proxy',
     displayName: '[Cypher] ♡ [They / Them / Theirs]',
     avatarURL: 'https://imgtree.co/direct/3xyq4Ltu.jpg',
@@ -121,7 +126,7 @@ const tmpQuestions = [
             'What do E and T mean in trans contexts?',
             'How did you figure out your gender identity?',
             'What does the word Transgender mean to you?',
-            'How did you hear about our server?'
+            'How did you hear about our server?',
         ],
     },
     {
@@ -133,7 +138,7 @@ const tmpQuestions = [
             'How do you intend to be an ally on our server?',
             'Of the many trans-specific servers on Discord, why join this one in particular?',
             'What are three things you would change about the LGBTQ community?',
-            ],
+        ],
     },
     {
         id: 'questioning',
@@ -144,7 +149,7 @@ const tmpQuestions = [
             'If you could change three things about yourself right now, what would they be and why?',
             'What do E and T mean in trans contexts?',
             'How did you hear about our server?',
-            ],
+        ],
     },
 ];
 
@@ -158,7 +163,7 @@ const tfpQuestions = [
             'How did you hear about our server?',
             'What are three things that are unwelcome to do in an NSFW server such as this one?',
             'Please send us a photo of your government ID - passport preferred - that clearly shows your date of birth and all four corners of the document. You may block out your name / necronym and the document number if desired. We do not store this data, and it is deleted from the thread after we verify you.',
-            ],
+        ],
     },
 ];
 
@@ -172,9 +177,9 @@ const madQuestions = [
             'Why do you want access to post?',
             'What are you doing to fight capitalism?',
             'Do you have anything else you\'d like to add?',
-            ],
+        ],
     },
-];    
+];
 
 const syspQuestions = [
     {
@@ -186,7 +191,7 @@ const syspQuestions = [
             'What brings you to our server, out of the many other servers that exist on Discord?',
             'What do terms like System and Plural mean?',
             'How do you intend on being an ally to the plural community?',
-            ],
+        ],
     },
     {
         id: 'system',
@@ -197,7 +202,7 @@ const syspQuestions = [
             'What do terms like System and Plural mean?',
             'What is your opinion on Endogenic Systems?',
             'How did you discover your systemhood? You can answer this question as thoroughly or as vaguely as you\'d like.',
-            ],
+        ],
     },
     {
         id: 'system-questioning',
@@ -208,7 +213,7 @@ const syspQuestions = [
             'What do terms like System and Plural mean?',
             'Of the many servers on Discord, why join this one in particular?',
             'What made you begin questioning your systemhood?',
-            ],
+        ],
     },
 ];
 
@@ -243,19 +248,7 @@ const development = {
                 member: '1105354354501881866',
                 greeter: '1097204070252548097',
             },
-            questions: [
-                ...cdlfQuestions,
-                {
-                    id: ':3',
-                    title: 'Secret Third Thing',
-                    description: 'Secret third thing that is neither transgender nor cisgender',
-                    questions: [
-                        ':3',
-                        ':3',
-                        ':3',
-                    ],
-                },
-            ],
+            questions: defaultQuestions,
             links: {
                 rules: 'https://google.com/1-rules',
                 rule1: 'https://google.com/1-1',
@@ -268,11 +261,8 @@ const development = {
                 banAppealForm: 'https://example.com',
             },
             invite: 'https://google.com',
-            proxy: GAproxy,
-            rulesMessages: TPRulesMessages({
-                disallowSelfies: true,
-                selfiesChannelId: '1258669733851562005',
-            }),
+            proxy: TMPProxy,
+            rulesMessages: TMPRulesMessages,
         },
         '981615050664075404': {
             // TPSupporters
@@ -314,10 +304,8 @@ const development = {
                 banAppealForm: 'https://example.com',
             },
             invite: 'https://yahoo.com',
-            proxy: TPproxy,
-            rulesMessages: TPRulesMessages({
-                selfiesChannelId: '1494008807276281897',
-            }),
+            proxy: TMPProxy,
+            rulesMessages: TMPRulesMessages,
         },
     },
 };
@@ -331,15 +319,14 @@ const production = {
             // The Melting Pot
             sync: [
                 '1345228507407450132', // The F***ing Pot [outbound [TFP -> TMP] only!]
-                ]
             ],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
             channels: {
-                lobby: '1523581981852569650',               // TMP:welcome-verify-TMP
+                lobby: '1523581981852569650',                // TMP:welcome-verify-TMP
                 verifyLogs: '1532972668133965917',           // TMP:verify-logs
-                verifyLogsSecondary: '1532972906085351535', // TMP:verify-kick-logs
-                theoSendLogs: '1532973083378323717',        // TMP:theo-send-logs
+                verifyLogsSecondary: '1532972906085351535',  // TMP:verify-kick-logs
+                theoSendLogs: '1532973083378323717',         // TMP:theo-send-logs
                 welcome: '1512914648188321923',              // TMP:entrance-hall
                 general: '1211371064370663482',              // TMP:generally-silly
                 introduce: '1211371064370663481',            // TMP:introductions
@@ -348,9 +335,9 @@ const production = {
                 staffRoles: [
                     // [Active]
                     '1211371062806315016',  // TMP: Admin
-                    '1270943987813056666', // TMP: Developer
+                    '1270943987813056666',  // TMP: Developer
                     '1256252825155932191',  // TMP: Moderator
-                    '1298014691142139924', // TMP: Trial Moderator
+                    '1298014691142139924',  // TMP: Trial Moderator
                     '1270939584653561927',  // TMP: Verifier
                 ],
                 verifier: '1270939584653561927',
@@ -362,27 +349,25 @@ const production = {
                 inactivityPing: '1532975240639025253',
                 emojiVoid: '1532975122342875277',
             },
-            questions: defaultQuestions,
+            questions: tmpQuestions,
             links: {
                 banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScRut4v6JpyDXV2GVAk2OeN2tmj_HVNQTgb9s8bEP07FLuf8g/viewform?usp=dialog',
+                rules: 'https://discord.com/channels/1211371062273777714/1269460269130842243/1535804967565393962',
             },
             invite: 'https://discord.gg/wu52YV5mvF',
-            proxy: TMPproxy,
+            proxy: TMPProxy,
             rulesMessages: TMPRulesMessages,
         },
-
-        
         '1345228507407450132': {
             // The F***ing Pot
             sync: [],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread,
-            channels: { 
+            channels: {
                 lobby: '1345231424177045587',               // TFP:verification
                 verifyLogs: '1533294698347630693',          // TFP:verify-logs
                 verifyLogsSecondary: '1533294889486516255', // TFP:verify-kick-logs
                 theoSendLogs: '1533295070915072210',        // TFP:theo-send-logs
-                welcome: '1345240546851164170',             // TFP:welcome
                 general: '1345240559186350202',             // TFP:general
                 introduce: '1347745886318366840',           // TFP:introductions
             },
@@ -400,23 +385,22 @@ const production = {
             questions: tfpQuestions,
             links: {
                 banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScRut4v6JpyDXV2GVAk2OeN2tmj_HVNQTgb9s8bEP07FLuf8g/viewform?usp=dialog',
+                rules: 'https://discord.com/channels/1345228507407450132/1345231424177045587/1535805456671449100',
             },
             invite: 'https://discord.gg/fs4VZU7xzz',
-            proxy: TMPproxy,
+            proxy: TMPProxy,
             rulesMessages: TFPRulesMessages,
         },
-
-    '1177552729682477128': {
-        // Mutual Aid Database [MAD]
+        '1177552729682477128': {
+            // Mutual Aid Database [MAD]
             sync: [],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
             channels: {
-                lobby: '1261800625424044053',               // MAD:verification-tickets
+                lobby: '1261800625424044053',                // MAD:verification-tickets
                 verifyLogs: '1535445664563990688',           // MAD:verify-logs
-                verifyLogsSecondary: '1535445863672053930', // MAD:verify-kick-logs
-                theoSendLogs: '1535445999147946015',        // MAD:theo-send-logs
-                welcome: '1535446161924821002',              // MAD:welcome-wagon
+                verifyLogsSecondary: '1535445863672053930',  // MAD:verify-kick-logs
+                theoSendLogs: '1535445999147946015',         // MAD:theo-send-logs
                 general: '1177556190562099281',              // MAD:general
                 introduce: '1177552729682477131',            // MAD:introductions
             },
@@ -424,11 +408,11 @@ const production = {
                 staffRoles: [
                     // [Active]
                     '1231451788889296986',  // MAD: Server Admin
-                    '1265148655552434186', // MAD: Developer
+                    '1265148655552434186',  // MAD: Developer
                     '1261874269445685380',  // MAD: Server Moderator
-                    '1190213531711320116', // MAD: Resource Editor
+                    '1190213531711320116',  // MAD: Resource Editor
                     '1253932716290740255',  // MAD: Verifier
-                    '1261888257130627083', // MAD: Ticket Support
+                    '1261888257130627083',  // MAD: Ticket Support
                 ],
                 verifier: '1253932716290740255',
                 verified: '1211480701346517042',
@@ -438,21 +422,22 @@ const production = {
             questions: madQuestions,
             links: {
                 banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScRut4v6JpyDXV2GVAk2OeN2tmj_HVNQTgb9s8bEP07FLuf8g/viewform?usp=dialog',
+                rules: 'https://canary.discord.com/channels/1177552729682477128/1261800625424044053/1535806091999313922',
             },
             invite: 'https://discord.gg/3JdhPC9KJP',
             proxy: MADProxy,
             rulesMessages: MADRulesMessages,
         },
-    '1369082683183075328': {
-        // SystemPlace! [SYSP]
+        '1369082683183075328': {
+            // SystemPlace! [SYSP]
             sync: [],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
             channels: {
-                lobby: '1369091080078757888',               // SYSP:welcome-verify-sysp
+                lobby: '1369091080078757888',                // SYSP:welcome-verify-sysp
                 verifyLogs: '1369463582047080498',           // SYSP:verification-logs
-                verifyLogsSecondary: '1380336150425768016', // SYSP:verify-kick-logs
-                theoSendLogs: '1380336454584107079',        // SYSP:theo-send-logs
+                verifyLogsSecondary: '1380336150425768016',  // SYSP:verify-kick-logs
+                theoSendLogs: '1380336454584107079',         // SYSP:theo-send-logs
                 welcome: '1369084724525400104',              // SYSP:welcome
                 general: '1369082683183075331',              // SYSP:general
                 introduce: '1369097202185539594',            // SYSP:intros
@@ -461,11 +446,11 @@ const production = {
                 staffRoles: [
                     // [Active]
                     '1369083003120128150',  // SYSP: Administrator
-                    '1404631501865484288', // SYSP: Sys-Admin
+                    '1404631501865484288',  // SYSP: Sys-Admin
                     '1369083038809591899',  // SYSP: Moderator
-                    '1369083063400661002', // SYSP: Trial Moderator
+                    '1369083063400661002',  // SYSP: Trial Moderator
                     '1369085908707708999',  // SYSP: Verifier
-                    '1369085790273146951', //SYSP: Developer
+                    '1369085790273146951',  // SYSP: Developer
                 ],
                 verifier: '1369085908707708999',
                 verified: '1369083911899971615',
@@ -473,14 +458,18 @@ const production = {
                 member: '1369083936470208694',
                 inactivityPing: '1535456027871289364',
                 emojiVoid: '1380347311133298739',
+                greeter: '1380338258676027543',
             },
             questions: syspQuestions,
+            links: {
+                rules: 'https://discord.com/channels/1369082683183075328/1369084398049165402/1535805911942037566',
+            },
             invite: 'https://discord.gg/hR7TFHkDYx',
             proxy: SYSPProxy,
             rulesMessages: SYSPRulesMessages,
         },
-        
-    };
+    },
+};
 
 if (process.env.NODE_ENV === 'development') {
     Object.assign(config, development);
