@@ -1,7 +1,7 @@
 import { ChannelType, ThreadAutoArchiveDuration } from 'discord.js';
 import 'dotenv/config';
 import { FatalError } from '../bot/utils/errors.js';
-import { TPRulesMessages, GARulesMessages, CDLFRulesMessages } from './messages.js';
+import { TMPRulesMessages, MADRulesMessages, TFPRulesMessages, SYSPRulesMessages } from './messages.js';
 
 // for easier reading
 /* eslint-disable max-len */
@@ -45,34 +45,34 @@ const config = {
     guilds: {},
 };
 
-const TPproxy = {
-    name: 'Verification Kyle Proxy',
-    displayName: 'Kyle ♡ [Any Pronouns]',
-    avatarURL: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/proxy-avatar-kyle.png',
-    heartEmoji: '<:max_heart:968321960557809674>',
-    welcomeEmoji: '<a:TPF_GawrGura_Wave:968391057828093952>',
-    thanksEmoji: '<a:TPA_Trans_Heart:960885444285968395>',
-    bumpEmoji: '<a:TPF_Squid_Wave:968411630981496852>',
+const TMPproxy = {
+    name: 'Verification [Basil] Proxy',
+    displayName: '[Basil] ♡ [Any Pronouns]',
+    avatarURL: 'https://imgtree.co/direct/xg9P-9XP.png',
+    heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
+    welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
+    thanksEmoji: '<a:MP_Transgender_Shiny_Heart_Flag:1253876152850976919>',
+    bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
-const GAproxy = {
-    name: 'Verification Caitlyn Proxy',
-    displayName: 'Caitlyn ♡ [She/Her]',
-    avatarURL: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/proxy-avatar-caitlyn.png',
-    heartEmoji: '<:GayHeart:1135714747803783269>',
-    welcomeEmoji: '<:DemonThumbsup:1147951767682818201>',
-    thanksEmoji: '<:DemonCelebrate:1147951774683119676>',
-    bumpEmoji: '<:DemonFire:1147951717888041001>',
+const: MADProxy = {
+    name: 'Verification [Ruby] Proxy',
+    displayName: '[Ruby] ♡ [She / Her / Hers]',
+    avatarURL: 'https://imgtree.co/direct/aJg_YDWN.jpg',
+    heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
+    welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
+    thanksEmoji: '<a:MP_Transgender_Shiny_Heart_Flag:1253876152850976919>',
+    bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
-const CDLFproxy = {
-    name: 'Verification Jenna Proxy',
-    displayName: 'Jenna ♡ [She/Her]',
-    avatarURL: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/proxy-avatar-jenna.png',
-    heartEmoji: '<:LGBTPride1:950991161093423135>',
-    welcomeEmoji: '<a:TPF_GawrGura_Wave:968391057828093952>',
-    thanksEmoji: ':pray:',
-    bumpEmoji: ':eyes:',
+const: SYSPProxy = {
+    name: 'Verification [Cypher] Proxy',
+    displayName: '[Cypher] ♡ [They / Them / Theirs]',
+    avatarURL: 'https://imgtree.co/direct/3xyq4Ltu.jpg',
+    heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
+    welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
+    thanksEmoji: '<a:MP_Transgender_Shiny_Heart_Flag:1253876152850976919>',
+    bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
 const defaultQuestions = [
@@ -111,43 +111,104 @@ const defaultQuestions = [
     },
 ];
 
-const cdlfQuestions = [
+const tmpQuestions = [
     {
         id: 'trans',
         title: 'Transgender / Genderfluid / Nonbinary',
-        description: 'Select if you know you\'re trans.',
+        description: 'Select this role if you are one of these and not questioning your identity.',
         questions: [
             'What is your favourite rule from our server rules?',
-            'What about this server being trans-focused made you want to join?',
-            'Do you fall under the femme / trans-femme umbrella? If so, how?',
+            'What do E and T mean in trans contexts?',
             'How did you figure out your gender identity?',
-            'What pronouns do you use?',
+            'What does the word Transgender mean to you?',
+            'How did you hear about our server?'
         ],
     },
     {
         id: 'cis',
-        title: 'Cisgender / Other LGBTQ+',
-        description: 'Select if you\'re cis or another LGBTQ identity.',
+        title: 'Cisgender / Other LGBTQ',
+        description: 'Select this role if you are cisgender, regardless of if you are otherwise LGBTQ+.',
         questions: [
             'What is your favourite rule from our server rules?',
-            'What about this server being trans-focused made you want to join?',
-            'Do you fall under the femme / trans-femme umbrella? If so, how?',
-            'How did you figure out your gender identity?',
-            'What would you do as an ally in this server?',
-            'What pronouns do you use?',
-        ],
+            'How do you intend to be an ally on our server?',
+            'Of the many trans-specific servers on Discord, why join this one in particular?',
+            'What are three things you would change about the LGBTQ community?',
+            ],
     },
     {
         id: 'questioning',
-        title: 'Transgender Questioning',
-        description: 'Select if you think you might be trans, but aren\'t sure.',
+        title: 'LGBTQ+ Questioning',
+        description: 'Select this role if you\'re questioning your potential LGBTQ identity.',
         questions: [
             'What is your favourite rule from our server rules?',
-            'What about this server being trans-focused made you want to join?',
-            'Do you fall under the femme / trans-femme umbrella? If so, how?',
-            'What does the word Transgender mean to you?',
-            'What pronouns do you use?',
-        ],
+            'If you could change three things about yourself right now, what would they be and why?',
+            'What do E and T mean in trans contexts?',
+            'How did you hear about our server?',
+            ],
+    },
+];
+
+const tfpQuestions = [
+    {
+        id: 'member',
+        title: 'Member',
+        description: 'Select this role to join the server!',
+        questions: [
+            'What is your favourite rule from our server rules?',
+            'How did you hear about our server?',
+            'What are three things that are unwelcome to do in an NSFW server such as this one?',
+            'Please send us a photo of your government ID - passport preferred - that clearly shows your date of birth and all four corners of the document. You may block out your name / necronym and the document number if desired. We do not store this data, and it is deleted from the thread after we verify you.',
+            ],
+    },
+];
+
+const madQuestions = [
+    {
+        id: 'member',
+        title: 'Member',
+        description: 'Select this role to join the server!',
+        questions: [
+            'How did you hear about this server?',
+            'Why do you want access to post?',
+            'What are you doing to fight capitalism?',
+            'Do you have anything else you\'d like to add?',
+            ],
+    },
+];    
+
+const syspQuestions = [
+    {
+        id: 'singlet',
+        title: 'Singlet',
+        description: 'Click this role if you\'re not a system.',
+        questions: [
+            'What is your favourite rule from our server rules?',
+            'What brings you to our server, out of the many other servers that exist on Discord?',
+            'What do terms like System and Plural mean?',
+            'How do you intend on being an ally to the plural community?',
+            ],
+    },
+    {
+        id: 'system',
+        title: 'System',
+        description: 'Click this role if you\'re a system.',
+        questions: [
+            'What is your favourite rule from our server rules?',
+            'What do terms like System and Plural mean?',
+            'What is your opinion on Endogenic Systems?',
+            'How did you discover your systemhood? You can answer this question as thoroughly or as vaguely as you\'d like.',
+            ],
+    },
+    {
+        id: 'system-questioning',
+        title: 'System Questioning',
+        description: 'Click this role if you\'re unsure about whether you are plural.',
+        questions: [
+            'What is your favourite rule from our server rules?',
+            'What do terms like System and Plural mean?',
+            'Of the many servers on Discord, why join this one in particular?',
+            'What made you begin questioning your systemhood?',
+            ],
     },
 ];
 
@@ -264,337 +325,162 @@ const development = {
 const production = {
     debugOut: () => { },
     verboseOut: () => { },
-    clientId: '964615352489222225', // Theo
+    clientId: '1532968344313925813', // [PC] Theo
     guilds: {
-        '959551566388547676': {
-            // TransPlace
+        '1211371062273777714': {
+            // The Melting Pot
             sync: [
-                '1087014898199969873', // EnbyPlace
-                '638480381552754730', // Transonance
+                '1345228507407450132', // The F***ing Pot [outbound [TFP -> TMP] only!]
+                ]
             ],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
             channels: {
-                lobby: '1057132419150532678',               // TransPlace:welcome-verify
-                verifyLogs: '987377031434100747',           // TransPlace:verify-logs
-                verifyLogsSecondary: '1025521840816402442', // TransPlace:verify-kick-logs
-                theoSendLogs: '1364039747638530120',        // TransPlace:theo-send-logs
-                welcome: '978883070662959134',              // TransPlace:welcome-wagon
-                general: '960920453705257061',              // TransPlace:rules-info
-                introduce: '964221571071869050',            // TransPlace:entrance-hall
+                lobby: '1523581981852569650',               // TMP:welcome-verify-TMP
+                verifyLogs: '1532972668133965917',           // TMP:verify-logs
+                verifyLogsSecondary: '1532972906085351535', // TMP:verify-kick-logs
+                theoSendLogs: '1532973083378323717',        // TMP:theo-send-logs
+                welcome: '1512914648188321923',              // TMP:entrance-hall
+                general: '1211371064370663482',              // TMP:generally-silly
+                introduce: '1211371064370663481',            // TMP:introductions
             },
             roles: {
                 staffRoles: [
                     // [Active]
-                    '981735525784358962',  // Admin
-                    '1229965330869391430', // Admin (Hidden)
-                    '1012954384142966807', // Sr Mod
-                    '981735650971775077',  // Moderator
-                    '1069398630944997486', // Trial Mod
-                    '959916105294569503',  // Verifier
+                    '1211371062806315016',  // TMP: Admin
+                    '1270943987813056666', // TMP: Developer
+                    '1256252825155932191',  // TMP: Moderator
+                    '1298014691142139924', // TMP: Trial Moderator
+                    '1270939584653561927',  // TMP: Verifier
+                ],
+                verifier: '1270939584653561927',
+                verified: '1253860508767883335',
+                noImages: '1532951265552629940',
+                member: '1532944488513798304',
+                newbie: '1532974886958403775',
+                greeter: '1512915152935321723',
+                inactivityPing: '1532975240639025253',
+                emojiVoid: '1532975122342875277',
+            },
+            questions: defaultQuestions,
+            links: {
+                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScRut4v6JpyDXV2GVAk2OeN2tmj_HVNQTgb9s8bEP07FLuf8g/viewform?usp=dialog',
+            },
+            invite: 'https://discord.gg/wu52YV5mvF',
+            proxy: TMPproxy,
+            rulesMessages: TMPRulesMessages,
+        },
 
-                    // [On-Leave]
-                    '995822941663154206',  // Admin [On-Leave]
-                    '1046488017151463586', // Sr Mod [On-Leave]
-                    '996798320649457667',  // Moderator [On-Leave]
-                    '1069399026614681700', // Trial Mod [On-Leave]
-                    '996798409061171221', // verifier [On-Leave]
-                ],
-                verifier: '959916105294569503',
-                verified: '959748411844874240',
-                noImages: '1105701184406306876',
-                place: '1115073100174860298',
-                member: '1105230385769623584',
-                newbie: '1085261027807088710',
-                greeter: '978861945253945394',
-                inactivityPing: '1097289190682660884',
-                emojiVoid: '1093196851169218560',
-            },
-            questions: defaultQuestions,
-            links: {
-                rules: 'https://canary.discord.com/channels/959551566388547676/1057132419150532678/1379598680251699330',
-                rule1: 'https://canary.discord.com/channels/959551566388547676/1151689401643053107/1151694186257600522',
-                rule2: 'https://canary.discord.com/channels/959551566388547676/1151689483977236610/1151694304037838910',
-                rule3: 'https://canary.discord.com/channels/959551566388547676/1151689644052840589/1151694373424218163',
-                rule5: 'https://canary.discord.com/channels/959551566388547676/1151689706912882758/1151694425110609941',
-                rule6: 'https://canary.discord.com/channels/959551566388547676/1378897773243666454/1378898091620700230',
-                rule7: 'https://canary.discord.com/channels/959551566388547676/1151689903319564329/1151690023331172412',
-                rule9: 'https://canary.discord.com/channels/959551566388547676/1151689755537457265/1151694463127793674',
-                rule12: 'https://canary.discord.com/channels/959551566388547676/1151689825687195678/1151694529750106186',
-                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLSdDGRf6T5_8Dckf_c-8TIJFOLrqALQ6k5zc6EjGpMRJs-Q7pw/viewform',
-            },
-            invite: 'https://discord.gg/TransPlace',
-            proxy: TPproxy,
-            rulesMessages: TPRulesMessages({
-                selfiesChannelId: '1037517248862101504',
-            }),
-        },
-        '1087014898199969873': {
-            // EnbyPlace
-            sync: [
-                '959551566388547676', // TransPlace
-                '638480381552754730', // Transonance
-            ],
-            verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
-            privateThread: ChannelType.PrivateThread,
-            channels: {
-                lobby: '1255540593451335770',               // EnbyPlace:welcome-verify
-                verifyLogs: '1255540709419909140',          // EnbyPlace:verify-logs
-                verifyLogsSecondary: '1255540759046787093', // EnbyPlace:verify-kick-logs
-                theoSendLogs: '1364039490691268738',        // EnbyPlace:theo-send-logs
-                welcome: '1087014899290488870',             // EnbyPlace:welcome-wagon
-                general: '1087014899105923122',             // EnbyPlace:rules-info
-                introduce: '1087014899290488871',           // EnbyPlace:entrance-hall
-            },
-            roles: {
-                staffRoles: [
-                    // [Active]
-                    '1087014898418061367', // Admin
-                    '1087014898418061365', // Sr Mod
-                    '1087014898418061363', // Moderator
-                    '1087014898418061362', // Trial Mod
-                    '1255540964647370903', // verifier
-
-                    // [On-Leave]
-                    '1255541352813301811', // Admin [On-Leave]
-                    '1255541421348360324', // Sr Mod [On-Leave]
-                    '1255541502877368371', // Moderator [On-Leave]
-                    '1255541574851367043', // Trial Mod [On-Leave]
-                    '1255541652840255498', // verifier [On-Leave]
-                ],
-                verifier: '1255540964647370903',
-                verified: '1255542090046247004',
-                noImages: '1255542151769620501',
-                member: '1168300878982295562',
-                newbie: '1087014898220929197',
-                greeter: '1087014898241896476',
-                inactivityPing: '1255542262117568555',
-                emojiVoid: '1255542308204711988',
-            },
-            questions: defaultQuestions,
-            links: {
-                rules: 'https://canary.discord.com/channels/1087014898199969873/1255540593451335770/1258439336462909492',
-                rule1: 'https://canary.discord.com/channels/1087014898199969873/1258432882804785172/1258433967183630500',
-                rule2: 'https://canary.discord.com/channels/1087014898199969873/1258432989994680482/1258434025014431786',
-                rule3: 'https://canary.discord.com/channels/1087014898199969873/1258433032382058496/1258434063040118855',
-                rule5: 'https://canary.discord.com/channels/1087014898199969873/1258433071158395044/1258434101300691084',
-                rule7: 'https://canary.discord.com/channels/1087014898199969873/1258433115601502239/1258434279902412843',
-                rule9: 'https://canary.discord.com/channels/1087014898199969873/1258433158035013682/1258434309749215334',
-                rule12: 'https://canary.discord.com/channels/1087014898199969873/1258433194479583242/1258434330800291930',
-                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLSdDGRf6T5_8Dckf_c-8TIJFOLrqALQ6k5zc6EjGpMRJs-Q7pw/viewform',
-            },
-            invite: 'https://discord.gg/xt8WqnGffb',
-            proxy: TPproxy,
-            rulesMessages: TPRulesMessages({
-                disallowSelfies: true,
-                selfiesChannelId: '1376455776993935481',
-            }),
-        },
-        '638480381552754730': {
-            // Transonance
-            sync: [
-                '959551566388547676', // TransPlace
-                '1087014898199969873', // EnbyPlace
-            ],
-            verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
-            privateThread: ChannelType.PrivateThread,
-            channels: {
-                lobby: '1255543769835769999',               // Transonance:welcome-verify
-                verifyLogs: '1255543882913939527',          // Transonance:verify-logs
-                verifyLogsSecondary: '1255543905521238158', // Transonance:verify-kick-logs
-                theoSendLogs: '1364039878114807952',        // Transonance:theo-send-logs
-                welcome: '1109969065868542062',             // Transonance:welcome-wagon
-                general: '1092539304305233941',             // Transonance:rules-info
-                introduce: '1108789826351800340',           // Transonance:entrance-hall
-            },
-            roles: {
-                staffRoles: [
-                    // [Active]
-                    '1109905190372524132', // Admin
-                    '1255544133913677834', // Sr Mod
-                    '1109942209479970816', // Moderator
-                    '1255544257939374141', // Trial Mod
-                    '1255544342433632429', // Verifier
-
-                    // [On-Leave]
-                    '1255544478303784990', // Admin [On-Leave]
-                    '1255544545387745310', // Sr Mod [On-Leave]
-                    '1255544622739099670', // Moderator [On-Leave]
-                    '1255544693698199633', // Trial Mod [On-Leave]
-                    '1255544757954809967', // Verifier [On-Leave]
-                ],
-                verifier: '1255544342433632429',
-                verified: '1109907941454258257',
-                noImages: '1255544757510471790',
-                member: '1109907352578171001',
-                newbie: '1255545076860321822',
-                greeter: '1109912498469077252',
-                inactivityPing: '1255545148247507016',
-                emojiVoid: '1255545384995127423',
-            },
-            questions: defaultQuestions,
-            links: {
-                rules: 'https://canary.discord.com/channels/638480381552754730/1255543769835769999/1379578773745434725',
-                rule1: 'https://canary.discord.com/channels/638480381552754730/1378842074467794954/1378846359737602151',
-                rule2: 'https://canary.discord.com/channels/638480381552754730/1378844409222660126/1378845977842290858',
-                rule3: 'https://canary.discord.com/channels/638480381552754730/1378862066320015510/1378862385959272509',
-                rule5: 'https://canary.discord.com/channels/638480381552754730/1379266377700872343/1379266503727386699',
-                rule6: 'https://canary.discord.com/channels/638480381552754730/1379267116041244844/1379267267896021044',
-                rule7: 'https://canary.discord.com/channels/638480381552754730/1379268480083431484/1379269108142444556',
-                rule9: 'https://canary.discord.com/channels/638480381552754730/1379294404942102588/1379294558692573277',
-                rule12: 'https://canary.discord.com/channels/638480381552754730/1379295048063123486/1379295357514682508',
-                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLSdDGRf6T5_8Dckf_c-8TIJFOLrqALQ6k5zc6EjGpMRJs-Q7pw/viewform',
-            },
-            invite: 'https://discord.gg/QhTDQsyeD6',
-            proxy: TPproxy,
-            rulesMessages: TPRulesMessages({
-                selfiesChannelId: null,
-            }),
-        },
-        '1116634030834733077': {
-            // TransDice!
-            sync: [
-                '959551566388547676', // TransPlace
-                // Sync here is *intentionally 1-way to TransPlace*, as this is a spin-off server from TransPlace and generally will not be verifying people
-            ],
-            verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
-            privateThread: ChannelType.PrivateThread,
-            channels: {
-                lobby: '1342833050731548682',               // TransDice:welcome-verify
-                verifyLogs: '1342834458570657794',          // TransDice:verify-logs
-                verifyLogsSecondary: '1342835930649595995', // TransDice:verify-kick-logs
-                theoSendLogs: '1364104144700309545',        // TransDice:theo-send-logs
-            },
-            roles: {
-                staffRoles: [
-                    '1116668288638914641', // Blåholder
-                    '1144502144033116201', // TransPlace Staff
-                ],
-                verifier: '1116668288638914641', // Blåholder
-                verified: '1116673143013122068', // Adventurer
-            },
-            questions: defaultQuestions,
-            links: {
-                rules: 'https://canary.discord.com/channels/959551566388547676/1057132419150532678/1151892231091925163',
-                rule1: 'https://canary.discord.com/channels/959551566388547676/1151689401643053107/1151694186257600522',
-                rule2: 'https://canary.discord.com/channels/959551566388547676/1151689483977236610/1151694304037838910',
-                rule3: 'https://canary.discord.com/channels/959551566388547676/1151689644052840589/1151694373424218163',
-                rule5: 'https://canary.discord.com/channels/959551566388547676/1151689706912882758/1151694425110609941',
-                rule7: 'https://canary.discord.com/channels/959551566388547676/1151689903319564329/1151690023331172412',
-                rule9: 'https://canary.discord.com/channels/959551566388547676/1151689755537457265/1151694463127793674',
-                rule12: 'https://canary.discord.com/channels/959551566388547676/1151689825687195678/1151694529750106186',
-                banAppealForm: null,
-            },
-            invite: 'https://discord.gg/YUJM2Qg55q',
-            proxy: TPproxy,
-            rulesMessages: TPRulesMessages({
-                selfiesChannelId: null,
-            }),
-        },
-        '1135300957572431902': {
-            // Gender Anarchy
+        
+        '1345228507407450132': {
+            // The F***ing Pot
             sync: [],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
             privateThread: ChannelType.PrivateThread,
-            channels: {
-                lobby: '1244418752217485364',               // Gender Anarchy:welcome-verify
-                verifyLogs: '1244422429468655706',          // Gender Anarchy:verify-logs
-                verifyLogsSecondary: '1244422507776446514', // Gender Anarchy:verify-kick-logs
-                theoSendLogs: '1364040328298106910',        // Gender Anarchy:theo-send-logs
-                welcome: '',
-                general: '1135631066871378010',             // Gender Anarchy:rules
-                introduce: '1137568440622780507',           // Gender Anarchy:introductions
+            channels: { 
+                lobby: '1345231424177045587',               // TFP:verification
+                verifyLogs: '1533294698347630693',          // TFP:verify-logs
+                verifyLogsSecondary: '1533294889486516255', // TFP:verify-kick-logs
+                theoSendLogs: '1533295070915072210',        // TFP:theo-send-logs
+                welcome: '1345240546851164170',             // TFP:welcome
+                general: '1345240559186350202',             // TFP:general
+                introduce: '1347745886318366840',           // TFP:introductions
             },
             roles: {
                 staffRoles: [
                     // [Active]
-                    '1135440960835309610',  // Administrator
-                    '1269753219878490306',  // Senior Moderator
-                    '1135428559792508996',  // Moderator
-                    '1160658705092714576',  // Trial Moderator
-                    '1244425148480749670',  // Verifier
-
-                    // [On-Leave]
-                    '1269746464616091651',  // Administrator [On-Leave]
-                    '1269746471230771271',  // Senior Moderator [On-Leave]
-                    '1269740835633889362',  // Moderator [On-Leave]
-                    '1269740831460556901',  // Trial Moderator [On-Leave]
-                    '1269740820957757470',  // Verifier [On-Leave]
+                    '1345240530124017664', // Admin
+                    '1345240532602851338', // Team [Verifier]
                 ],
-                verifier: '1244425148480749670',
-                verified: '1135575202709909575',
-                noImages: '1204541395726106686',
-                place: '',
-                member: '1198798476813811712',
-                newbie: '',
-                greeter: '',
-                inactivityPing: '1244425552010678313',
-                emojiVoid: '',
+                verifier: '1345240532602851338',
+                verified: '1346291818274230282',
+                member: '1533286921290121347',
+                inactivityPing: '1535459082537013248',
             },
-            questions: defaultQuestions,
+            questions: tfpQuestions,
             links: {
-                rules: 'https://discord.com/channels/1135300957572431902/1244418752217485364/1437254490821496853',
-                rule1: 'https://discord.com/channels/1135300957572431902/1246846234023428146',
-                rule6: 'https://discord.com/channels/1135300957572431902/1246846166822551563',
-                rule8: 'https://discord.com/channels/1135300957572431902/1246846100933968045',
-                rule16: 'https://discord.com/channels/1135300957572431902/1246846037872738435',
-                rule17: 'https://discord.com/channels/1135300957572431902/1246845980779872498',
-                rule18: 'https://discord.com/channels/1135300957572431902/1246845823950655498',
-                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScPwTmjulNCtn_VwW4diTX8L3Y-eoqr4W0wYHf27dcIJUC2Pw/viewform',
+                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScRut4v6JpyDXV2GVAk2OeN2tmj_HVNQTgb9s8bEP07FLuf8g/viewform?usp=dialog',
             },
-            invite: 'https://discord.gg/GenderAnarchy',
-            proxy: GAproxy,
-            rulesMessages: GARulesMessages,
+            invite: 'https://discord.gg/fs4VZU7xzz',
+            proxy: TMPproxy,
+            rulesMessages: TFPRulesMessages,
         },
-        '928175231091236884': {
-            // Café de la Femme
+
+    '1177552729682477128': {
+        // Mutual Aid Database [MAD]
             sync: [],
             verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
-            privateThread: ChannelType.PrivateThread,
+            privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
             channels: {
-                lobby: '1275115292644606005',               // CDLF:cdlf-welcome-verify
-                verifyLogs: '1275115394021195816',          // CDLF:verify-logs
-                verifyLogsSecondary: '1275115440753872916', // CDLF:verify-kick-logs
-                theoSendLogs: '1381052245319225425',        // CDLF:theo-send-logs
-                welcome: '1275116015466057748',             // CDLF:welcome-wagon
-                general: '928177646502805534',              // CDLF:rules
-                introduce: '949463502798614588',            // CDLF:introduce-yourself
+                lobby: '1261800625424044053',               // MAD:verification-tickets
+                verifyLogs: '1535445664563990688',           // MAD:verify-logs
+                verifyLogsSecondary: '1535445863672053930', // MAD:verify-kick-logs
+                theoSendLogs: '1535445999147946015',        // MAD:theo-send-logs
+                welcome: '1535446161924821002',              // MAD:welcome-wagon
+                general: '1177556190562099281',              // MAD:general
+                introduce: '1177552729682477131',            // MAD:introductions
             },
             roles: {
                 staffRoles: [
                     // [Active]
-                    '928181806774243358',   // Barista [Admin]
-                    '963914918132846622',   // Hostess [Mod]
-                    '949509841980903434',   // Cashier [Mini Mod]
-                    '1273080176892313713',  // Bouncer [Verifier]
-
-                    // [On-Leave]
-                    '1297610758925844510',  // Barista [Admin Off-Duty]
-                    '1297611101382381589',  // Host/ess [Mod Off-Duty]
-                    '1297611290700939274',  // Cashier [Mini Mod Off-Duty]
-                    '1297611413543452692',  // Bouncer [Verifier Off-Duty]
+                    '1231451788889296986',  // MAD: Server Admin
+                    '1265148655552434186', // MAD: Developer
+                    '1261874269445685380',  // MAD: Server Moderator
+                    '1190213531711320116', // MAD: Resource Editor
+                    '1253932716290740255',  // MAD: Verifier
+                    '1261888257130627083', // MAD: Ticket Support
                 ],
-                verifier: '1273080176892313713',
-                verified: '949441336417853520',
-                noImages: '1275118018526973982',
-                place: '',
-                member: '1275122654088527915',
-                newbie: '',
-                greeter: '1296977654192537650',
-                inactivityPing: '1275124169016606792',
-                emojiVoid: '1275124294749392906',
+                verifier: '1253932716290740255',
+                verified: '1211480701346517042',
+                member: '1535438729563340840',
+                inactivityPing: '1535458911723982848',
             },
-            questions: cdlfQuestions,
+            questions: madQuestions,
             links: {
-                rules: 'https://discord.com/channels/928175231091236884/1275115292644606005/1428095364333965484',
-                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLSfDVQgCREQKWSNH9n9wGlCJbQL5ns7uOPEjUm44d1omWExrcA/viewform',
+                banAppealForm: 'https://docs.google.com/forms/d/e/1FAIpQLScRut4v6JpyDXV2GVAk2OeN2tmj_HVNQTgb9s8bEP07FLuf8g/viewform?usp=dialog',
             },
-            invite: 'https://discord.gg/CafeDeLaFemme',
-            proxy: CDLFproxy,
-            rulesMessages: CDLFRulesMessages,
+            invite: 'https://discord.gg/3JdhPC9KJP',
+            proxy: MADProxy,
+            rulesMessages: MADRulesMessages,
         },
-    },
-};
+    '1369082683183075328': {
+        // SystemPlace! [SYSP]
+            sync: [],
+            verifyTicketAutoArchiveDuration: ThreadAutoArchiveDuration.OneWeek,
+            privateThread: ChannelType.PrivateThread, // test server does not have server premium level for private threads
+            channels: {
+                lobby: '1369091080078757888',               // SYSP:welcome-verify-sysp
+                verifyLogs: '1369463582047080498',           // SYSP:verification-logs
+                verifyLogsSecondary: '1380336150425768016', // SYSP:verify-kick-logs
+                theoSendLogs: '1380336454584107079',        // SYSP:theo-send-logs
+                welcome: '1369084724525400104',              // SYSP:welcome
+                general: '1369082683183075331',              // SYSP:general
+                introduce: '1369097202185539594',            // SYSP:intros
+            },
+            roles: {
+                staffRoles: [
+                    // [Active]
+                    '1369083003120128150',  // SYSP: Administrator
+                    '1404631501865484288', // SYSP: Sys-Admin
+                    '1369083038809591899',  // SYSP: Moderator
+                    '1369083063400661002', // SYSP: Trial Moderator
+                    '1369085908707708999',  // SYSP: Verifier
+                    '1369085790273146951', //SYSP: Developer
+                ],
+                verifier: '1369085908707708999',
+                verified: '1369083911899971615',
+                noImages: '1380337590292709376',
+                member: '1369083936470208694',
+                inactivityPing: '1535456027871289364',
+                emojiVoid: '1380347311133298739',
+            },
+            questions: syspQuestions,
+            invite: 'https://discord.gg/hR7TFHkDYx',
+            proxy: SYSPProxy,
+            rulesMessages: SYSPRulesMessages,
+        },
+        
+    };
 
 if (process.env.NODE_ENV === 'development') {
     Object.assign(config, development);
