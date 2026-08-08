@@ -1,59 +1,59 @@
-const TPRulesImgEmbed = {
-    color: 0xDF585B,
-    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/tp-server-rules-header.png' },
+const TMPRulesImgEmbed = {
+    color: 0xdf338c,
+    image: { url: 'https://i.pinimg.com/originals/13/c3/e8/13c3e803a85dff90e46d084990bc0fb1.gif' },
 };
 
-const TPRulesEmbed = ({ selfiesChannelId, disallowSelfies }) => ({
-    color: 0xDF585B,
+const TMPRulesEmbed = {
+    color: 0xdf338c,
     title: 'Rules',
     fields: [
         {
-            name: '`1`. **Hate has no home here.**',
-            value: '> No hate speech, slurs, homophobia, gatekeeping (including transmedicalism), or transphobia is allowed under **ANY** circumstances. (Even in "joking" scenarios.). **Please refrain from sharing any images or videos containing the above content, even if the intention is to criticise the individuals responsible.** [Read More]({{rule1}})',
+            name: '`1`. **Be respectful**',
+            value: '> Treat everyone in the server with respect and kindness, including members, staff, and guests. Remember that everyone deserves to feel safe and welcome in our community. Avoid personal attacks, insults, and any language that could be considered demeaning or hurtful.',
         },
         {
-            name: '`2`. **No age-restricted, obscene, shocking, gory, or overly violent content.**',
-            value: '> Our community remains appropriate for anyone over the age of 13; any content deemed unfit for this is disallowed. If something straddles the line, ask a mod, CW, or don’t post it at all. This includes text, images, or links. [Read More]({{rule2}})',
+            name: '`2`. **No harassment or bullying**',
+            value: '> Harassment and bullying of any kind are strictly prohibited. This includes, but is not limited to: name-calling, insults, derogatory comments, following members to harass them, belittling others, excluding people, and spreading rumours. If someone asks you to stop a behaviour, please respect their wishes.',
         },
         {
-            name: '`3`. **Avoid disallowed topics and phrases.**',
-            value: '> This includes, but is not limited to: **heavy venting,** **political discussions,** **piracy,** and **promoting or extensively discussing the use of recreational substances, legal or otherwise.** `(#mature-general is an exception for legal substances)` More information on these banned topics can be found in `#politics`, `#venting`, or in our list of disallowed topics and phrases [here]({{rule3}})',
+            name: '`3`. **Avoid spamming**',
+            value: '> Avoid spamming the chat with excessive messages, rapid-fire posts, or flooding channels with .gifs, memes, or links. This can disrupt conversations and make it difficult for others to participate.',
         },
         {
-            name: '`4`. **Advocating any Illegitimate/DIY Medical treatment is not permitted, especially HRT, binders, and dosages.**',
-            value: '> This extends to conversations about sourcing HRT through illegitimate means. Additionally, please refrain from discussing or encouraging DIY binders, as they have the potential to harm the wearer if not properly handled.',
+            name: '`4`. **Stay on topic**',
+            value: '> Please keep conversations relevant to the channel\'s topic. This helps keep our server organised and makes it easier for people to find the information they\'re looking for. If you\'re not sure where to post something, ask a staff member!',
         },
         {
-            name: '`5`. **Treat everyone with respect.**',
-            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated. [Read More]({{rule5}})',
+            name: '`5`. **No self-promotion**',
+            value: '> We generally discourage advertising or self-promotion unless it\'s specifically allowed in a designated channel. This includes promoting your own server, social media, products, or services. If you have something you\'d like to share, please check with a staff member first.',
         },
         {
-            name: '`6`. **Respect plural members, and only use PK for our allowed use cases.**',
-            value: '> If you see users talking with the `[APP]` tag, they\'re talking through PluralKit. Due to Discord limitations, these messages will show up with the `[APP]` tag - however, they are not apps, they are users. **Additionally, PluralKit is only to be used as a mental health aid, not for any form of roleplay.** [Read More]({{rule6}})',
+            name: '`6`. **Follow channel guidelines**',
+            value: '> Pay attention to the specific guidelines and rules posted in each channel. These guidelines help ensure that the channel is used for its intended purpose.',
         },
         {
-            name: '`7`. **Be considerate of others\' triggers.**',
-            value: '> We understand that with such a diverse and large community, it\'s not always feasible to avoid every trigger. Nevertheless, please make an effort to acknowledge and respect others\' triggers, refrain from attempting to change their mind or prove them wrong. **Remember, as a member of this large community, your triggers are your responsibility too.** If a chat topic triggers you (unless listed below), consider stepping back and removing yourself from the situation until the conversation topic changes.\n\n> ***Note:*** *You can hide messages with triggering content by using a double upright slash:* TW ||trigger|| - ||content||. For instance, "TW ||spiders|| - ||Check out these [Spider Images]||." **You can find a list of common triggers** [Here]({{rule7}}).',
+            name: '`7`. **Keep all conversations Safe-for-Work**',
+            value: '> This is a 13+ server and a SFW space. Please avoid any content that is sexually suggestive, explicit, or could make others uncomfortable. This includes sexual images, videos, innuendos, and detailed discussions about sexual activity. Any violation of this rule is grounds for immediate ban without warning.',
         },
         {
-            name: '`8`. **Avoid mini-modding or arguing with moderators in chat.**',
-            value: '> If you see rules being broken, please use our custom report `[Example Below]` feature or open a support ticket instead of taking matters into your own hands. Our staff team volunteer their time to ensure a positive environment, and their decisions are always made with the community\'s best interests at heart. If you ever have concerns regarding a decision we\'ve made, we welcome you to open a ticket or direct message a senior staff member or admin.',
+            name: '`8`. **Celebrate diversity**',
+            value: '> Discrimination of any kind is unacceptable. We value diversity and believe that everyone should feel welcome and respected, regardless of their race, ethnicity, gender identity, sexual orientation, religion, ability, or background.',
         },
         {
-            name: '`9`. **Keep in mind effective conflict resolution and interpersonal skills.**',
-            value: '> Practise effective de-escalation — everyone has different ways of doing this, but some common tactics include conceding several points and then changing the topic, agreeing to disagree, stepping back from the conversation outright, calling a chat mod to mediate, and/or being the first to apologise. [Read More]({{rule9}})',
+            name: '`9`. **Protect personal information**',
+            value: '> Do not share your own personal information or the personal information of others without their consent. This includes names, addresses, phone numbers, social media profiles, et cetera. Sharing someone\'s personal information without their permission ("doxing") is a serious offense and will result in immediate consequences. It\'s also a crime.',
         },
         {
-            name: '`10`. **No spam or self-promotion.**',
-            value: '> Including but not limited to `[server invites, advertisements, etc.]`, **unless given explicit permission from a staff member.** This includes sending unsolicited server invites, advertisements, or direct messages with the intention of promoting content.',
+            name: '`10`. **Prioritise safety and well-being**',
+            value: '> Do not promote, encourage, or glorify self-harm or harm towards others. If you or someone you know is struggling, please reach out to a trusted friend, family member, or mental health professional.',
         },
         {
-            name: '`11`. **Keep on-topic in all channels.**',
-            value: `> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so.${disallowSelfies ? '\n\n> *As well*, selfies are not allowed to be posted for now. A selfies channel will be opened in the future to allow posting selfies in a manner that is safer for everyone.' : ''}${!disallowSelfies && selfiesChannelId ? `\n\n> *As well*, selfies are to be shared only in <#${selfiesChannelId}> (**#selfies**). This is to ensure the safety of all of our members. Access to the **#selfies** channel will be granted after meeting server activity requirements.` : ''}`,
+            name: '`11`. **No discussion of drugs or alcohol**',
+            value: '> To protect our younger members, discussions about drugs and alcohol are not allowed. This includes promoting substance use, sharing personal experiences with substance use, and glorifying addiction. [This rule does not apply to those in ⁠the-bar (#the-bar) as that\'s partially what the channel is about.]',
         },
         {
-            name: '`12`. **Keep all conversations in English.**',
-            value: '> Short phrases or jokes in another language are allowed, but we cannot effectively moderate non-English extensive discussions. (Non-English threads are an exception. You can find a list of those [Here]({{rule12}}))',
+            name: '`12`. **Follow Discord\'s Guidelines**',
+            value: '> In addition to these server rules, all members must abide by Discord\'s Terms of Service and Community Guidelines.',
         },
         {
             name: '** **\n**By joining this server you agree to the following guidelines**',
@@ -63,172 +63,266 @@ const TPRulesEmbed = ({ selfiesChannelId, disallowSelfies }) => ({
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 });
 
-const notesReportEmbed = {
-    color: 0xDF585B,
+const TMPnotesReportEmbed = {
+    color: 0xdf338c,
     title: 'Notes / Report to Staff',
-    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. We want this space to be as inclusive and safe as possible. \n\n**To do this:**\n`Right-Click A Message > Apps > Report Message`\n\n***This directly reports the message to our server staff for us to best handle the situation as fast as possible <3 ***\n\n> *This does not report the message to discord, just to our server staff.*',
-    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/how-to-report.gif' },
+    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; open a ticket with staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. We want this space to be as inclusive and safe as possible. \n\n**To do this:**\n`Right-Click A Message > Apps > Daedalus > Flag Message`\n\n***This directly reports the message to our server staff for us to best handle the situation as fast as possible <3 ***\n\n> *This does not report the message to discord, just to our server staff.*',
     footer: { text: 'If you are ever unsure if something is allowed, feel free to ask.' },
 };
 
-const mentalHealthEmbed = {
+const TMPmentalHealthEmbed = {
     color: 0xDF585B,
     title: '🔴 IMPORTANT 🔴',
-    description: 'We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional advice. Because of this, we do not have venting channels. We ask that you seek out appropriate help if you are experiencing a crisis and not depend on this server as an emotional crutch. Please avoid topics that are very heavy emotionally loaded. Thank you for understanding ❤️',
+    description: 'We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional advice. We ask that you seek out appropriate help if you are experiencing a crisis and not depend on this server as an emotional crutch. Please avoid topics that are very heavily emotionally loaded. Thank you for understanding ❤️',
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 };
 
-const GARulesEmbed1 = {
-    color: 0xDF585B,
+export const TMPRulesMessages = [
+    { embeds: [TMPRulesImgEmbed], [TMPRulesEmbed] },
+    { embeds: [TMPnotesReportEmbed, TMPmentalHealthEmbed] },
+];
+
+
+
+const TFPRulesImgEmbed = {
+    color: 0x30d5c8,
+    image: { url: 'https://i.pinimg.com/originals/13/c3/e8/13c3e803a85dff90e46d084990bc0fb1.gif' },
+};
+
+const TFPRulesEmbed = {
+    color: 0x30d5c8,
     title: 'Rules',
     fields: [
         {
-            name: '`1.` Hate Has No Home Here.',
-            value: '> Treat others with kindness and respect at all times. Avoid offensive behavior, personal attacks, and disrespectful language. Bigotry, slurs, harassment, hateful politics, or any other form of hate are not tolerated.',
+            name: '`1`. **Hate has no home here.**',
+            value: '> No hate speech, slurs, homophobia, gatekeeping (including transmedicalism), or transphobia is allowed under **ANY** circumstances. (Even in "joking" scenarios.). **Please refrain from sharing any images or videos containing the above content, even if the intention is to criticise the individuals responsible.**',
         },
         {
-            name: '`2.` No spam or self promotion.',
-            value: '> Spam or self-promotion, such as sharing links or content related to external products or services, is only allowed if explicitly approved by the server administrators. This includes links to other discord servers and anything that could reasonably be considered spam.',
+            name: '`2`. **Treat everyone with respect**',
+            value: '> Treat everyone in the server with respect and kindness, including members, staff, and guests.  Remember that everyone deserves to feel safe and welcome in our community. Avoid personal attacks, insults, and any language that could be demeaning or hurtful.',
         },
         {
-            name: '`3.` No Doxing or Sharing Personal Info.',
-            value: '> Sharing personal information of any user without their consent is strictly prohibited. This includes names, addresses, contact details, or any other private information. Doing so with intent is grounds for a ban on all partnered servers.',
+            name: '`3`. **Harassment of any kind is prohibited**',
+            value: '> Don\'t harass, name-call, insult, make derogatory comments towards, belittle, or exclude anyone for any reason.',
         },
         {
-            name: '`4.` Limit Political Discussions',
-            value: '> Our community is focused on keeping people safe, but we also want people to exercise their freedom of expression. To that end, especially because we are an explicitly anarchist server and because LGBTQIA+ and especially trans people have been politicized so much, political discussion is allowed. \n> Bigoted topics are banned. For a complete list, [click here](https://canary.discord.com/channels/1135300957572431902/1246845823950655498/1246846431332008008). \n> Staff reserve the right to shut down any heated discussion by any means necessary for the mood of the server.',
+            name: '`4`. **No self-promotion**',
+            value: '> We generally discourage advertising or self-promotion unless it\'s specifically allowed in a designated channel. This includes promoting your own server, social media, products, or services. If you have something you\'d like to share, please check with a staff member first.',
         },
         {
-            name: '`5.` No Breaking Discord TOS or Community Guidelines.',
-            value: '> Being under 13 is [not allowed](https://support.discord.com/hc/en-us/articles/360040724612-Why-is-Discord-asking-for-my-birthday). Furthermore discussions or sharing of any illegal content, including but not limited to malicious software, illegal drugs, or any other illicit activities, are also not allowed in the server.\n[Discord TOS](https://dis.gd/tos) and [Community Guidelines](https://dis.gd/guidelines).',
+            name: '`5`. **Treat everyone with respect.**',
+            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated. [Read More]({{rule5}})',
         },
         {
-            name: '`6.` Respect plural members.',
-            value: '> Respect plural members, and only use PK for our allowed use cases. If you see users talking with the bot tag, they\'re talking through PluralKit. Due to Discord limitations, these messages will show up with the [BOT] tag - however, they are not from bots, they are from users. Additionally, PluralKit is not for any form of roleplay. Any form of discrimination or hate against alters will be met with a ban. all forms and origins of plurality are accepted here. ***All users of an account are responsible for its conduct. This includes plural users. It is up to the collective users of an account to be responsible for what happens on their account.***',
+            name: '`6`. **No discrimination**',
+            value: '> Discrimination of any kind is unacceptable. We value diversity and believe that everyone should feel welcome and respected, regardless of their race, ethnicity, gender identity, sexual orientation, religion, ability, or background.',
         },
         {
-            name: '`7.` Do not attempt to bypass the Automod.',
-            value: '> This server uses auto-mod to block messages deemed NSFW, violent, or triggering. Do not attempt to circumvent the Automod.',
+            name: '`7`. **No doxxing**',
+            value: '> Do not share your own personal information or the personal information of others without their consent. This includes names, addresses, phone numbers, and social media profiles. Sharing someone\'s personal information without their permission ("doxing") is a serious offense and will result in action. It\'s also a crime.',
         },
         {
-            name: '`8.` Age-Appropriate Content Only.',
-            value: '> To ensure a safe and welcoming space for all, do not share any suggestive or explicit content, or engage in explicit discussions; even in the mature channels. We have minors in our community, and such content shouldn\'t be seen by minors. Absolutely no NSFW content can be included in your profile or on this server. [Read More](https://canary.discord.com/channels/1135300957572431902/1435465648498016276)',
+            name: '`8`. **Avoid mini-modding or arguing with moderators in chat.**',
+            value: '> If you see rules being broken, please use our custom report `[Example Below]` feature or open a support ticket instead of taking matters into your own hands. Our staff team volunteer their time to ensure a positive environment, and their decisions are always made with the community\'s best interests at heart. If you ever have concerns regarding a decision we\'ve made, we welcome you to open a ticket or direct message a senior staff member or admin.',
         },
         {
-            name: '`9.` Please keep all channels on-topic.',
-            value: '> Please keep topics in a channel within the general theme of the channel. This includes venting staying within the venting channels. Topics about ||eating disorders, suicide, and self harm,|| and the like are strictly prohibited for the safety of members.',
+            name: '`9`. **Prioritise safety and well-being**',
+            value: '> Do not promote, encourage, or glorify self-harm or harm towards others. If you or someone you know is struggling, please reach out to a trusted friend, family member, or mental health professional.',
         },
         {
-            name: '`10.` Avoid mini-modding.',
-            value: '> If you see rules being broken, please use our custom report `[Example Below]` feature or open a support ticket instead of taking matters into your own hands. Our staff team volunteer their time to ensure a positive environment, and their decisions are always made with the community\'s best interests at heart. If you ever have concerns regarding a decision we\'ve made, we welcome you to open a ticket.',
+            name: '`10`. **Keep on topic in all channels**',
+            value: '> Pay attention to the specific guidelines and rules posted in each channel. These guidelines help ensure that the channel is used for its intended purpose. All "spicy" content must be kept inside the channels dedicated for that purpose.',
         },
         {
-            name: '`11.` Keep all conversations in English.',
-            value: '> Short phrases or jokes in another language are allowed, but we cannot effectively moderate non-English extensive discussions.',
+            name: '`11`. **Don\'t actively have sex on the server**',
+            value: '> Although this server is very sex positive please refrain from posting any photos or images depicting sex acts. This can include masturbation all the way to pornography. If you\'re interested in sharing these with others, please only do so in DMs. Lewd memes and the like are allowed though. ',
         },
         {
-            name: '`12.` Moderator Discretion',
-            value: '> Our staff has the discretion to do what they find necessary to ensure a safe server for all. Remember to follow the spirit of these rules, not just the letter.',
+            name: '`12`. **Consent is key**',
+            value: '> Don\'t push conversations on people who do not seem interested in participating. This applies to everything, but especially flirting and politics. **No means no**.',
+        },
+        {
+            name: '** **\n**By joining this server you agree to the following guidelines**',
+            value: '[Discord ToS](https://discord.com/terms)\n[Discord Community Guidelines](https://discord.com/guidelines)',
         },
     ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
+});
+
+const TFPnotesReportEmbed = {
+    color: 0x30d5c8,
+    title: 'Notes / Report to Staff',
+    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. We want this space to be as inclusive and safe as possible.
+    footer: { text: 'If you are ever unsure if something is allowed, feel free to ask.' },
 };
 
-const GAMentalHealthEmbed = {
-    color: 0xDF585B,
+const TFPmentalHealthEmbed = {
+    color: 0x30d5c8,
     title: '🔴 IMPORTANT 🔴',
-    description: 'We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional, medical, or legal advice. Thank you for understanding ❤️',
+    description: 'We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional advice. Because of this, we do not have venting channels. We ask that you seek out appropriate help if you are experiencing a crisis and not depend on this server as an emotional crutch. Please avoid topics that are very heavily emotionally loaded. Thank you for understanding ❤️',
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
 };
 
-export const TPRulesMessages = (config) => [
-    { embeds: [TPRulesImgEmbed, TPRulesEmbed(config)] },
-    { embeds: [notesReportEmbed, mentalHealthEmbed] },
+export const TFPRulesMessages = [
+    { embeds: [TFPRulesImgEmbed], [TFPRulesEmbed] },
+    { embeds: [TFPnotesReportEmbed, TFPmentalHealthEmbed] },
 ];
 
-export const GARulesMessages = [
-    { embeds: [GARulesEmbed1, notesReportEmbed, GAMentalHealthEmbed] },
-];
 
-export const CDLFRulesImgEmbed = {
-    color: 0xFF52F3,
-    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/cdlf-rules-header.png' },
+
+const SYSPRulesImgEmbed = {
+    color: 0x8b0000,
+    image: { url: 'https://i.pinimg.com/originals/13/c3/e8/13c3e803a85dff90e46d084990bc0fb1.gif' },
 };
 
-export const CDLFRulesEmbed = {
-    color: 0xFF52F3,
+const SYSPRulesEmbed = {
+    color: 0x8b0000,
     title: 'Rules',
-    fields: [ 
-        { 
-            name: '`0.` Rule Zero:',
-            value: '> Rules are the foundation of a healthy server. Any attempt to create loopholes in these rules will be addressed.',
+    fields: [
+        {
+            name: '`1`. **Hate has no home here.**',
+            value: '> No hate speech, slurs, homophobia, gatekeeping (including transmedicalism / sysmedicalism), or transphobia is allowed under **ANY** circumstances. (Even in "joking" scenarios.). **Please refrain from sharing any images or videos containing the above content, even if the intention is to criticise the individuals responsible.**',
         },
         {
-            name: '`1.` All users must follow Discord ToS & Community Guidelines.',
-            value: '> In compliance with Discord ToS, do not post sexually explicit content in user avatars, custom statuses or bios, server banners, server icons, invite splashes, emoji, stickers, or any other space that cannot be age-restricted. See https://discord.com/terms and https://discord.com/guidelines for the complete policies.',
+            name: '`2`. **System responsibility**',
+            value: '> You are responsible for the alters in your system and their actions.',
         },
         {
-            name: '`2.` Be respectful to your fellow server members.',
-            value: '> Don\'t start dramatic or flammable conversations on the server. If all parties agree to such a discussion (politics, arguments, AI, et cetera), take it to DMs.',
+            name: '`3`. **No age-restricted, obscene, gory, or overly violent content**',
+            value: '> Our community remains appropriate for anyone over the age of 13; any content deemed unfit for this is disallowed. If something straddles the line, ask a mod, CW, or don’t post it at all.',
         },
         {
-            name: '`3.` Hate has no home here.',
-            value: '> No discrimination based on race, gender, sexuality, nationality, or any other category that one may not have control over will be tolerated.',
+            name: '`4`. **Disallowed topics**',
+            value: '> Conversations including, but not limited to, these topics are disallowed: heavy venting, political discussions, system discourse, piracy, and promoting or extensively discussing the use of recreational substances, legal or otherwise.',
         },
         {
-            name: '`4.` This is a server with minors present.',
-            value: '> Absolutely ZERO NSFW content, subject matter, or discussions shall be permitted on this server.',
+            name: '`5`. **Treat everyone with respect**',
+            value: '> Refrain from engaging in any form of discrimination against others, regardless of age, gender, identity, orientation, and so forth. Absolutely no harassment, witch hunting, sexism, racism, or any form of hate targeting generalised groups of people will be tolerated. [Read More]({{rule5}})',
         },
         {
-            name: '`5.` Don\'t spam the server.',
-            value: '> No spamming, raiding, threats, jokes of threats/ violence, or gore. This also includes wishing death on anyone, even if we don\'t agree with their views.',
+            name: '`6`. **Pluralkit use**',
+            value: '> If you see users talking with the APP tag, they\'re talking through PluralKit. Due to Discord limitations, these messages will show up with the [APP] tag - however, they are not bots, they are users.\n\n Additionally, PluralKit is only to be used as a mental health aid, and not for any form of roleplay.',
         },
         {
-            name: '`6.` No politics.',
-            value: '> Political discussions or discussions about other sensitive/triggering matters are not allowed here. These include discussion about groups of people who have harmed others, even if it is not condemning or condoning.',
+            name: '`7`. **Respect triggers**',
+            value: '> We understand that with such a diverse and large community, it\'s not always feasible to avoid every trigger. Nevertheless, please make an effort to acknowledge and respect others\' triggers, refrain from attempting to change their mind or prove them wrong. Remember, as this large community, your triggers are also your responsibility. If a chat topic triggers you, consider stepping back and removing yourself from the situation until the conversation topic changes.',
         },
         {
-            name: '`7.` Keep on topic in all channels.',
-            value: '> Specifically, keep any and all mental health related topics such as anxiety, depression, suicidal thoughts, etc. in the specified mental health channels: <#950153059303051344>, <#928175714442821712>, <#949436159820431390>, <#1054127049905819658>, and <#949448500469436456>. (18-support, emotional-support, no-reply-vent, anonymous-support, and vent-general, respectively.)',
+            name: '`8`. **Avoid mini-modding or arguing with moderators in chat.**',
+            value: '> If you see rules being broken, please use our report feature or open a support ticket instead of taking matters into your own hands. Our staff team volunteer their time to ensure a positive environment, and their decisions are always made with the community\'s best interests at heart. If you ever have concerns regarding a decision we\'ve made, we welcome you to open a ticket or direct message a senior staff member or admin.',
         },
         {
-            name: '`8.` Use common sense.',
-            value: '> Disruptive, purposefully obnoxious, or taunting behaviors are not acceptable in the server. It is your responsibility to follow these rules as well as any actions that fall under common sense and basic online etiquette.',
+            name: '`9`. **Keep in mind effective conflict resolution**',
+            value: '> Practise effective de-escalation — everyone has different ways of doing this, but some common tactics include conceding several points and then changing the topic, agreeing to disagree, stepping back from the conversation outright, calling a chat mod to mediate, and/or being the first to apologise.',
         },
         {
-            name: 'PluralKit',
-            value: '> This server utilizes <@&972632927160655875>, a bot that allows one profile to present as multiple. Due to <@466378653216014359>\'s limitations, users may appear with a \'bot\' tag beside their name—these are not sentient bots, these are real people. Systems using <@&972632927160655875> will need to abide by the rules below. To learn more about plurality, visit <https://morethanone.info/>',
+            name: '`10`. **No spam or self-promotion**',
+            value: '> Unless given explicit permission from a staff member avoiding self-promotion; including but not limited to: sending unsolicited server invites, advertisements, or direct messages with the intention of promoting content.\n\n Fonts and typing quirks that are unreadable are considered spam and are therefore not allowed.',
         },
         {
-            name: '`S1.` System Responsibility',
-            value: '> The entire system is accountable for all infractions.',
+            name: '`11`. **Keep on topic in all channels**',
+            value: '> We understand conversations naturally drift; however, if they do not self-correct after a while, a mod may step in to help do so. ',
         },
         {
-            name: '`S2.` System Clarity',
-            value: '> All systems must use a system tag for all messages on the server.',
+            name: '`12`. **Keep all conversations in English**',
+            value: '> Short phrases or jokes in another language are allowed, but we cannot effectively moderate non-English extensive discussions.',
         },
         {
-            name: '`S3.` Age',
-            value: '> Keep under 13 alters/littles/headmates out of the server.',
+            name: '** **\n**By joining this server you agree to the following guidelines**',
+            value: '[Discord ToS](https://discord.com/terms)\n[Discord Community Guidelines](https://discord.com/guidelines)',
         },
-    ], 
+    ],
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-}
+});
 
-export const CDLFSupplementalEmbed = {
-    color: 0xFF52F3,
-    title: 'Additional Information',
-    description: [
-        '**As a member of the server, you are expected to be aware and up to date on these rules. Ignorance or lack of focus is not an excuse and does not pardon you from any moderator actions.**',
-        '**Users who act as bystanders or provoke users may be punished as moderators see fit. This includes instances of DMing members including chasers, scammers, trolls, etc. Moderators do not have to justify their actions to anyone other than administration.**',
-        '**If you have any questions relating to the rules, feel free to ask the mods in <#949749180295958608> (ask-a-mod).**',
-        '**If you see an intentional rule break, ping staff ASAP with the <@&949479574373298287> tag.**',
-        '**If you see a concerning user or want to report a user anonymously, DM an online staff member immediately.**',
-    ].join('\n\n'),
+const SYSPnotesReportEmbed = {
+    color: 0x8b0000,
+    title: 'Notes / Report to Staff',
+    description: '**Please be the bigger person**—if you see someone trying to start a fight, don\'t fight back; DM staff. Similarly, if you see anything that may cause issues or someone possibly willingly causing them, don’t try to argue them into submission. *Don’t feed the trolls, nor your own trauma responses*.\n\nIf you see something against the rules or something that makes you feel unsafe, let staff know. You can report a user or message by: [right click -> applications -> Daedalus -> Flag Message]. This will result in the fastest response time. You will never be punished for a report made in good faith. We want this space to be as inclusive and safe as possible.
+    footer: { text: 'If you are ever unsure if something is allowed, feel free to ask.' },
+};
+
+const SYSPmentalHealthEmbed = {
+    color: 0x8b0000,
+    title: '🔴 IMPORTANT 🔴',
+    description: 'We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional advice. Because of this, we do not have venting channels. We ask that you seek out appropriate help if you are experiencing a crisis and not depend on this server as an emotional crutch. Please avoid topics that are very heavily emotionally loaded. Thank you for understanding ❤️',
     image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
-}
+};
 
-export const CDLFRulesMessages = [
-    { embeds: [CDLFRulesImgEmbed, CDLFRulesEmbed, CDLFSupplementalEmbed] },
-]
+export const SYSPRulesMessages = [
+    { embeds: [SYSPRulesImgEmbed], [SYSPRulesEmbed] },
+    { embeds: [SYSPnotesReportEmbed, SYSPmentalHealthEmbed] },
+];
+
+
+
+
+const MADRulesImgEmbed = {
+    color: 0xC765AB,
+    image: { url: 'https://i.pinimg.com/originals/13/c3/e8/13c3e803a85dff90e46d084990bc0fb1.gif' },
+};
+
+const MADRulesEmbed = {
+    color: 0xC765AB,
+    title: 'Rules',
+    fields: [
+        {
+            name: '`1`. **Put effort into accomodating others**',
+            value: '> This is the highest priority - without it, we can\'t exist together. One can\'t expect to be accomodated without accomodating others. When accomodations clash, follow the principles of Universal Design - the setting or build that benefits the most people is the one that should be built. (Don\'t build stairs when a ramp is cheaper and more accessible to more people.)',
+        },
+        {
+            name: '`2`. **Do not discriminate**',
+            value: '> Any action that judges a person based on a characteristic that that person cannot change - things like race, sex, gender, nationality, class, orientation, et cetera - isn\'t allowed in our communities.',
+        },
+        {
+            name: '`3`. **Don\'t abuse others.**',
+            value: '> Don\'t harass, name-call, insult, make derogatory comments towards, belittle, or exclude anyone for any reason. We work to dismantle the systems that normalised oppression - in that vein, remember that even mundane words can be offensive to certain people. (Example: Don\'t call a group of women "guys"; that is by definition misgendering them. It\'s not gender-neutral, and is only thought of that way because of the prominance of "man-by-default" societal expectations. Break them.)',
+        },
+        {
+            name: '`4`. **Network**',
+            value: '> This server is made to be a network, a catchall of many smaller and larger mutual aid communities, all available in one place. Your contributions to this network are appreciated. If one place doesn\'t work out for you, you\'re always welcome to come back and try a different one! Should you decide to contribute to our resources, you will need to complete verification.',
+        },
+        {
+            name: '`5`. **Terms of Service trumps all**',
+            value: '> Don\'t violate the TOS or the law. Mods are not bound by the Geneva conventions and may exercise cruel and unusual punishments for rule violations as they see fit.',
+        },
+        {
+            name: '`6`. **This is a SFW server**',
+            value: '> We have opt-in channels specifically for triggers and NSFW content; but in general, don\'t post things here that aren\'t safe for work.',
+        },
+        {
+            name: '`7`. **No doxxing**',
+            value: '> Do not share your own personal information or the personal information of others without their consent. This includes names, addresses, phone numbers, and social media profiles. Sharing someone\'s personal information without their permission ("doxing") is a serious offense and will result in action. It\'s also a crime.',
+        },
+        {
+            name: '`8`. **Stay civil**',
+            value: '> Don\'t start a debate in the public channels. This isn\'t a political server.',
+        },
+        {
+            name: '`9`. **Prioritise safety and well-being**',
+            value: '> Do not promote, encourage, or glorify self-harm or harm towards others. If you or someone you know is struggling, please reach out to a trusted friend, family member, or mental health professional.',
+        },
+        {
+            name: '`10`. **Keep on topic in all channels**',
+            value: '> Pay attention to the specific guidelines and rules posted in each channel. These guidelines help ensure that the channel is used for its intended purpose. All "spicy" content must be kept inside the channels dedicated for that purpose.',
+        },
+        {
+            name: '** **\n**By joining this server you agree to the following guidelines**',
+            value: '[Discord ToS](https://discord.com/terms)\n[Discord Community Guidelines](https://discord.com/guidelines)',
+        },
+    ],
+    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
+});
+
+const MADmentalHealthEmbed = {
+    color: 0x30d5c8,
+    title: '🔴 IMPORTANT 🔴',
+    description: 'We are not mental health professionals. As much as we would like to be able to render assistance in every way possible, we as staff do not have the capacity or the professional qualifications necessary to render proper assistance with mental health issues, nor are we able to give professional advice. Because of this, we do not have venting channels. We ask that you seek out appropriate help if you are experiencing a crisis and not depend on this server as an emotional crutch. Please avoid topics that are very heavily emotionally loaded. Thank you for understanding ❤️',
+    image: { url: 'https://raw.githubusercontent.com/TransGG/assets/refs/heads/main/embed-sizer.png' },
+};
+
+export const MADRulesMessages = [
+    { embeds: [MADRulesImgEmbed], [MADRulesEmbed] },
+    { embeds: [MADmentalHealthEmbed] },
+];
     
