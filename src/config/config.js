@@ -53,30 +53,30 @@ const config = {
 const TMPProxy = {
     name: 'Verification [Basil] Proxy',
     displayName: '[Basil] ♡ [Any Pronouns]',
-    avatarURL: 'https://imgtree.co/direct/xg9P-9XP.png',
+    avatarURL: 'https://github.com/pat-5621-me/pc-assets/blob/main/proxy-avatar-basil.png?raw=true',
     heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
     welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
-    thanksEmoji: '<a:MP_Transgender_Shiny_Heart_Flag:1253876152850976919>',
+    thanksEmoji: '<a:MP_transgender_shiny_heart_flag:1253876152850976919>',
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
 const MADProxy = {
     name: 'Verification [Ruby] Proxy',
     displayName: '[Ruby] ♡ [She / Her / Hers]',
-    avatarURL: 'https://imgtree.co/direct/aJg_YDWN.jpg',
+    avatarURL: 'https://github.com/pat-5621-me/pc-assets/blob/main/proxy-avatar-ruby.jpg?raw=true',
     heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
     welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
-    thanksEmoji: '<a:MP_Transgender_Shiny_Heart_Flag:1253876152850976919>',
+    thanksEmoji: '<a:MP_transgender_shiny_heart_flag:1253876152850976919>',
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
 const SYSPProxy = {
     name: 'Verification [Cypher] Proxy',
     displayName: '[Cypher] ♡ [They / Them / Theirs]',
-    avatarURL: 'https://imgtree.co/direct/3xyq4Ltu.jpg',
+    avatarURL: 'https://github.com/pat-5621-me/pc-assets/blob/main/proxy-avatar-cypher.jpg?raw=true',
     heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
     welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
-    thanksEmoji: '<a:MP_Transgender_Shiny_Heart_Flag:1253876152850976919>',
+    thanksEmoji: '<a:MP_transgender_shiny_heart_flag:1253876152850976919>',
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
