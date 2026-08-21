@@ -56,7 +56,7 @@ const TMPProxy = {
     avatarURL: 'https://github.com/pat-5621-me/pc-assets/blob/main/proxy-avatar-basil.png?raw=true',
     heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
     welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
-    thanksEmoji: '<a:MP_transgender_shiny_heart_flag:1253876152850976919>',
+    thanksEmoji: '<:MP_transgender_shiny_heart_flag:1253876152850976919>',
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
@@ -66,7 +66,7 @@ const MADProxy = {
     avatarURL: 'https://github.com/pat-5621-me/pc-assets/blob/main/proxy-avatar-ruby.jpg?raw=true',
     heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
     welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
-    thanksEmoji: '<a:MP_transgender_shiny_heart_flag:1253876152850976919>',
+    thanksEmoji: '<:MP_transgender_shiny_heart_flag:1253876152850976919>',
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
@@ -76,7 +76,7 @@ const SYSPProxy = {
     avatarURL: 'https://github.com/pat-5621-me/pc-assets/blob/main/proxy-avatar-cypher.jpg?raw=true',
     heartEmoji: '<:MP_transgalaxy:1270027513334337641>',
     welcomeEmoji: '<a:MPA_Wave_GawrGura:1532941166654259392>',
-    thanksEmoji: '<a:MP_transgender_shiny_heart_flag:1253876152850976919>',
+    thanksEmoji: '<:MP_transgender_shiny_heart_flag:1253876152850976919>',
     bumpEmoji: '<a:MPA_Bounceline:1256702957093781664>',
 };
 
